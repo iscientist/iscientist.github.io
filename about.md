@@ -20,7 +20,7 @@ The iScientist reflects the accomplishments of undergraduate students in a varie
 
 ## History
 
-The iScientist was founded in 2013 by the students and faculty of the Integrated Science program at McMaster University. The founding Editor-in-Chief of the iScientist was Andre Colgoni, Services Librarian and iCore member in the Integrated Science Program at McMaster University.
+The iScientist was founded in 2013 by the students and faculty of the Integrated Science program at McMaster University. The founding Editor-in-Chief of the iScientist was Andrew Colgoni, Services Librarian and iCore member in the Integrated Science Program at McMaster University.
 
 Since then, we have been continuously endeavoring to showcase the excellent work of students of the Integrated Science Program at McMaster University.
 
