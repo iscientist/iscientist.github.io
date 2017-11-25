@@ -2,7 +2,6 @@
 <div class="sidebar-section page-info">
 <h2 class="page-heading">This Paper</h2>
   <a href="{{ page.filename | append: ".pdf" | prepend: "assets/pdf/" | relative_url }}">PDF</a>
-  {% include page-tree.html context="/_posts/page.filename" %}
   {% include bibtex.html %}
 </div>
 
