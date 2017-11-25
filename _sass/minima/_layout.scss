@@ -655,7 +655,9 @@ ul {
 }
 .flexslider-viewport {
   height: 600px;
-  height: 600px;
+  @include media-query($on-palm) {
+    height: 400px;
+  }
 }
 
 .flexslider .slides {
@@ -666,6 +668,9 @@ ul {
     height: 600px;
     -moz-user-select: none;
 
+    @include media-query($on-palm) {
+      height: 400px;
+    }
     .flexslider-image-background {
       position: absolute;
       width: 100%;
@@ -682,6 +687,9 @@ ul {
     }
     &:hover .flexslider-image-overlay {
       opacity: 0.0;
+      @include media-query($on-palm) {
+        opacity: 1.0;
+      }
     }
     .flexslider-image-overlay {
       position: absolute;
