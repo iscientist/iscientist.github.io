@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="wrapper" id="topbanner">
+  {% if page.carousel %}
+  <div class="flexslider">
+    <ul class="slides">
+    {% for slides in page.carousel %}
+      <li>
+        <div class="flexslider-image-box">
+          <div class="flexslider-image-background rellax" style="background-image: url({{ slides.image | prepend: "/assets/carousel/" | relative_url }})">
+            <div class="flexslider-image-overlay"></div>
+          </div>
+          <div class="flexslider-image-overlay">
+            <div class="flex-caption">
+              <h2>{{ slides.caption }}</h2>
+              <p>Photograph by: {{ slides.pc }}
+              {%- if slides.date -%}&nbsp;|&nbsp;{{ slides.date }}{%- endif -%}</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+
+<div class="wrapper" id="mainpage">
+  <div class="row">
+    <div class="col-md-8">
+
+      <div class="home">
+        {{ content }}
+
+
+        {% include volume-highlight.html volume=site.volumes.last %}
+
+        <div class="mainpage-section">
+          <h1 class="page-heading">Latest Articles</h1>
+          <div class="post-listing-home">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {%- for post in site.posts -%}
+            {% include post-listing.html %}
+            {%- endfor -%}
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="col-md-4">
+      {% include sidebar.html %}
+    </div>
+  </div>
+</div>

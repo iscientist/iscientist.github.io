@@ -1,0 +1,52 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-wrapper">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="footer-block" id="footer-summary">
+            <h2>{{ site.title | escape }}</h2>
+            <p>{{ site.description | escape }}</p>
+            <div class="post-meta">
+              <p>
+                Copyright © 2013 - {{ "today" | date: "%Y" }} {{ site.copyright | escape }}
+                {%- if site.acknowledge-web-author -%}
+                <br>
+                Webpage designed by <a href="http://jpanuelos.com">Jonathan Panuelos</a> and powered by <a href="http://jekyllrb.com">Jekyll</a>
+                {%- endif -%}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-block" id="footer-social-media">
+            <h3>Contact Us</h3>
+            <ul class="social-media-list">
+              {% if site.email %}
+              <li>
+                {% include icon-email.html username=site.email %}
+              </li>
+              {% endif %}
+              {% if site.facebook_username %}
+              <li>
+                {% include icon-facebook.html username=site.facebook_username %}
+              </li>
+              {% endif %}
+              {% if site.github_username %}
+              <li>
+                {% include icon-github.html username=site.github_username %}
+              </li>
+              {% endif %}
+              {% if site.twitter_username %}
+              <li>
+                {% include icon-twitter.html username=site.twitter_username %}
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>

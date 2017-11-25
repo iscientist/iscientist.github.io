@@ -1,0 +1,863 @@
+/**
+ ##     ## ########    ###    ########  ######## ########
+ ##     ## ##         ## ##   ##     ## ##       ##     ##
+ ##     ## ##        ##   ##  ##     ## ##       ##     ##
+ ######### ######   ##     ## ##     ## ######   ########
+ ##     ## ##       ######### ##     ## ##       ##   ##
+ ##     ## ##       ##     ## ##     ## ##       ##    ##
+ ##     ## ######## ##     ## ########  ######## ##     ##
+ */
+.site-header {
+  width: 100%;
+  background: $main-background-color;
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $spacing-unit * 1.865;
+  transition: box-shadow 0.5s ease;
+
+  // sticky
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  // shadow
+  box-shadow: none;
+  &.navshrink {
+    box-shadow: 0px 0px 10px 1px $grey-color-dark;
+  }
+}
+.site-header > .wrapper {
+    max-width: -webkit-calc(#{$header-width} - (#{$spacing-unit} * 2));
+    @include media-query($on-laptop) {
+      max-width: -webkit-calc(#{$header-width} - (#{$spacing-unit}));
+    }
+}
+
+.site-title {
+  @include relative-font-size(3.0);
+  font-weight: 300;
+  max-height: $base-line-height * $base-font-size * 3.75;
+  line-height: $base-line-height * $base-font-size * 3.75;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  transition: line-height 0.5s ease, font-size 0.5s ease;
+
+  &.navshrink {
+    @include relative-font-size(1.625);
+    line-height: $base-line-height * $base-font-size * 2.25;
+  }
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+  &:hover {
+    text-decoration: none;
+    &>.site-title-i {
+      color: #39B54A;
+    }
+  }
+}
+.site-title-the {
+  @include relative-font-size(1.5);
+  font-weight: normal;
+  text-transform: uppercase;
+  transform: translate(0.3em,0.4ex) rotate(-90deg);
+  float: left;
+  transition: font-size 0.5s ease, transform 0.5s ease;
+  &.navshrink {
+    @include relative-font-size(0.8);
+  }
+}
+.site-title-i {
+  @include relative-font-size(4.0);
+  font-family: "Dancing Script", cursive;
+  transition: font-size 0.5s ease;
+  &.navshrink {
+    @include relative-font-size(2.25);
+  }
+}
+.site-title-scientist {
+
+}
+
+.site-nav {
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+  line-height: $base-line-height * $base-font-size * 3.75;
+  transition: line-height 0.5s ease;
+
+  &.navshrink {
+    line-height: $base-line-height * $base-font-size * 2.25;
+  }
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    position: relative;
+    color: $text-color-light;
+    line-height: $base-line-height;
+    text-transform: uppercase;
+    letter-spacing: 0.3ex;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+
+    &:hover {
+      text-decoration: none;
+      border-color: $brand-accent;
+      z-index: 1;
+    }
+    // overlap borders
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+
+    // underline
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $text-color-light;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.5s ease;
+    }
+    &:hover:before {
+      visibility: visible;
+      transform: scaleX(0.8);
+    }
+  }
+
+  #trigger-page {
+    display: none;
+  }
+
+  @include media-query($on-palm) {
+    width: auto;
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    line-height: $base-line-height;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 0px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+    label[for="nav-trigger-page"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: $grey-color-dark;
+      }
+    }
+
+    input#nav-trigger ~ #trigger {
+      clear: both;
+      display: none;
+    }
+
+    input#nav-trigger:checked {
+      &~ #trigger {
+        display: block;
+        padding-bottom: 5px;
+      }
+    //  &~ label[for="nav-trigger-page"] {
+    //    display: none;
+    //  }
+    }
+
+    input#nav-trigger-page ~ #trigger-page {
+      clear: both;
+      display: none;
+    }
+
+    input#nav-trigger-page:checked {
+      &~ #trigger-page {
+        display: block;
+        padding-bottom: 5px;
+      }
+    //  &~ label[for="nav-trigger"] {
+    //    display: none;
+    //  }
+    }
+
+    h2, h3, h4 {
+      line-height: $base-line-height;
+      letter-spacing: 0.3ex;
+      padding: 5px 10px;
+      text-transform: uppercase;
+    }
+    ul {
+      line-height: $base-line-height;
+      text-align: left;
+      letter-spacing: 0.3ex;
+      padding: 5px 10px;
+      text-transform: uppercase;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+      border-left: none;
+      border-right: none;
+
+      &:hover:before {
+        visibility: hidden;
+      }
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+
+
+/**
+ ########  #######   #######  ######## ######## ########
+ ##       ##     ## ##     ##    ##    ##       ##     ##
+ ##       ##     ## ##     ##    ##    ##       ##     ##
+ ######   ##     ## ##     ##    ##    ######   ########
+ ##       ##     ## ##     ##    ##    ##       ##   ##
+ ##       ##     ## ##     ##    ##    ##       ##    ##
+ ##        #######   #######     ##    ######## ##     ##
+ */
+.site-footer {
+  background: $footer-background-color;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+  color: $text-color-white;
+
+  & .footer-wrapper {
+    padding: 20px 0px;
+    //border-top: dotted 1px $text-color-white;
+    //border-bottom: dotted 1px $text-color-white;
+  }
+  & #footer-summary {
+  }
+  & #footer-social-media {
+    padding-left: 20px;
+    border-left: dotted 1px $text-color-white;
+  }
+  & p, ul, li {
+    color: $text-color-white;
+  }
+  & a:hover {
+    color: $text-color-white;
+  }
+  & h2, h3, h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  & ul, ol {
+    margin-left: 0px;
+  }
+  & .post-meta > p {
+    color: $grey-color;
+  }
+}
+
+
+
+/**
+ ########     ###     ######   ########
+ ##     ##   ## ##   ##    ##  ##
+ ##     ##  ##   ##  ##        ##
+ ########  ##     ## ##   #### ######
+ ##        ######### ##    ##  ##
+ ##        ##     ## ##    ##  ##
+ ##        ##     ##  ######   ########
+ */
+.page-content {
+  background: $main-background-color;
+  padding: $spacing-unit 0;
+  margin-top: $spacing-unit * 1.865;
+  padding-top: $spacing-unit * 1.865;
+}
+
+.page-heading {
+  @include relative-font-size(1.25);
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-affiliations {
+  padding-left: $spacing-unit * 1.0;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+/**
+ * Sidebar
+ */
+.sidebar-section {
+  margin-bottom: $spacing-unit;
+}
+.page-info {
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+.page-outline {
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+.post-listing-sidebar {
+  margin-left: 0;
+  list-style: none;
+
+  .post-link {
+    @include relative-font-size(1.0);
+  }
+  .post-listing-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    width: 100%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      margin-top: $spacing-unit * 0.5;
+      width: 64px;
+      border-bottom: 1px $grey-color dotted;
+    }
+  }
+  .post-listing-image {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    @include aspect-ratio(1,1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    a.post-listing-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+
+  > li {
+    margin-bottom: $spacing-unit * 0.5;
+  }
+}
+
+/**
+ ########   #######   ######  ########  ######
+ ##     ## ##     ## ##    ##    ##    ##    ##
+ ##     ## ##     ## ##          ##    ##
+ ########  ##     ##  ######     ##     ######
+ ##        ##     ##       ##    ##          ##
+ ##        ##     ## ##    ##    ##    ##    ##
+ ##         #######   ######     ##     ######
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-abstract {
+  text-align: justify;
+  padding-left: 1em;
+  border-left: 3px #777 solid;
+  margin-bottom: $spacing-unit;
+}
+
+.post-citation {
+  padding-left: 1em;
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-references {
+  padding-left: 1em;
+  border-left: 3px #777 solid;
+  margin-bottom: $spacing-unit;
+  columns: 2;
+
+  & p {
+    font-size: $small-font-size;
+    color: $grey-color;
+  }
+}
+
+ul {
+  list-style: none;
+}
+.post-tree a {
+  transition: margin 0.3s ease;
+
+  &:hover {
+    margin-left: -10px;
+  }
+}
+
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2, h3, h4 {
+    padding-top: $base-line-height * $base-font-size * 2.25;
+    margin-top: -1 * $base-line-height * $base-font-size * 2.25;
+  }
+
+  h2 {
+    @include relative-font-size(2);
+    border-bottom: 1px $grey-color dashed;
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
+
+/**
+ ##     ##    ###    #### ##    ##    ########     ###     ######   ########
+ ###   ###   ## ##    ##  ###   ##    ##     ##   ## ##   ##    ##  ##
+ #### ####  ##   ##   ##  ####  ##    ##     ##  ##   ##  ##        ##
+ ## ### ## ##     ##  ##  ## ## ##    ########  ##     ## ##   #### ######
+ ##     ## #########  ##  ##  ####    ##        ######### ##    ##  ##
+ ##     ## ##     ##  ##  ##   ###    ##        ##     ## ##    ##  ##
+ ##     ## ##     ## #### ##    ##    ##        ##     ##  ######   ########
+ */
+// swap link colors on main page
+.home {
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+#mainpage {
+  margin-top: $spacing-unit;
+}
+.mainpage-section {
+  position: relative;
+  margin-bottom: $spacing-unit;
+}
+
+.content-highlight {
+  background-color: $footer-background-color;
+  width: 170%;
+  left: -70%;
+  padding-left: 70%;
+
+  .latest-issue-img-block {
+    position: relative;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .latest-issue-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    border: solid 1px $grey-color-light;
+    margin-left: -15px;
+    transform: translate(-50%,-50%);
+  }
+  .latest-issue-text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: $text-color-white;
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    a, h1, h2, h3, p {
+      color: $text-color-white;
+      margin-bottom: 0;
+    }
+    .latest-issue-text-vol-number {
+      padding-bottom: $spacing-unit / 2;
+      margin-bottom: $spacing-unit / 2;
+      border-bottom: dotted 1px $grey-color-light;
+    }
+    &:hover {
+      a, h1, h2, h3, p {
+        color: $link-color;
+        text-decoration: none;
+      }
+    }
+  }
+  .latest-issue-img {
+    width: 100%;
+    @include aspect-ratio(8,11);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+
+/*
+ ########   #######   ######  ########    ##       ####  ######  ########
+ ##     ## ##     ## ##    ##    ##       ##        ##  ##    ##    ##
+ ##     ## ##     ## ##          ##       ##        ##  ##          ##
+ ########  ##     ##  ######     ##       ##        ##   ######     ##
+ ##        ##     ##       ##    ##       ##        ##        ##    ##
+ ##        ##     ## ##    ##    ##       ##        ##  ##    ##    ##
+ ##         #######   ######     ##       ######## ####  ######     ##
+ */
+.post-listing-block {
+  margin-bottom: 35px;
+  position: relative;
+  .post-link {
+    @include relative-font-size(1.4);
+  }
+  .post-listing-field {
+    @include relative-font-size(0.8);
+    font-weight: bold;
+    letter-spacing: 0.2ex;
+    text-transform: uppercase;
+  }
+  a.post-listing-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+  &:hover .post-listing-text {
+    background-color: $background-color-opaque;
+  }
+}
+.post-listing-text {
+  padding-bottom: 15px;
+  width: 100%;
+  h2 {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+}
+.post-listing-block-image {
+  position: relative;
+  width: 100%;
+  @include aspect-ratio(32,9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  .post-listing-field {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: $background-color;
+  }
+  .post-listing-text {
+    background-color: $background-color-transluscent;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: background-color 0.5s ease;
+  }
+}
+
+/*
+ ########  #######  ########     ########     ###    ##    ## ##    ## ######## ########
+    ##    ##     ## ##     ##    ##     ##   ## ##   ###   ## ###   ## ##       ##     ##
+    ##    ##     ## ##     ##    ##     ##  ##   ##  ####  ## ####  ## ##       ##     ##
+    ##    ##     ## ########     ########  ##     ## ## ## ## ## ## ## ######   ########
+    ##    ##     ## ##           ##     ## ######### ##  #### ##  #### ##       ##   ##
+    ##    ##     ## ##           ##     ## ##     ## ##   ### ##   ### ##       ##    ##
+    ##     #######  ##           ########  ##     ## ##    ## ##    ## ######## ##     ##
+ */
+#topbanner {
+  width: 100%;
+  max-width: 100%;
+  padding: 0px;
+  background-color: $banner-background-color;
+}
+.flexslider-viewport {
+  height: 600px;
+  height: 600px;
+}
+
+.flexslider .slides {
+  .flexslider-image-box {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 600px;
+    -moz-user-select: none;
+
+    .flexslider-image-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      display: block;
+      margin: auto;
+      -moz-user-select: none;
+      .flexslider-image-overlay {
+        background: none;
+      }
+    }
+    &:hover .flexslider-image-overlay {
+      opacity: 0.0;
+    }
+    .flexslider-image-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transition: all 0.5s ease;
+      background: linear-gradient($background-color-transparent,
+                                  $background-color-transparent,
+                                  $background-color-transparent,
+                                  $background-color-transparent,
+                                  $background-color-dark-transluscent);
+      .flex-caption {
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+        padding-left: 30px;
+        margin: 0px;
+        margin-left: 50px;
+        border-left: solid 2px $grey-color-light;
+        min-height: 80px;
+        position: absolute;
+        z-index: 2;
+        color: white;
+        h2 {
+          margin-bottom: 0px;
+        }
+        p {
+          font-size: $small-font-size;
+        }
+      }
+    }
+  }
+}
+
+/**
+ ########    ###     ######    ######     ########     ###     ######   ########
+    ##      ## ##   ##    ##  ##    ##    ##     ##   ## ##   ##    ##  ##
+    ##     ##   ##  ##        ##          ##     ##  ##   ##  ##        ##
+    ##    ##     ## ##   ####  ######     ########  ##     ## ##   #### ######
+    ##    ######### ##    ##        ##    ##        ######### ##    ##  ##
+    ##    ##     ## ##    ##  ##    ##    ##        ##     ## ##    ##  ##
+    ##    ##     ##  ######    ######     ##        ##     ##  ######   ########
+ */
+.post-tag {
+  display: inline-block;
+  background: $brand-color-pastel;
+  margin: 0.2em 0.5em;
+  padding: 0 0.5em;
+  border-radius: 2px;
+}
+
+/**
+ ##     ##  #######  ##       ##     ## ##     ## ########  ######
+ ##     ## ##     ## ##       ##     ## ###   ### ##       ##    ##
+ ##     ## ##     ## ##       ##     ## #### #### ##       ##
+ ##     ## ##     ## ##       ##     ## ## ### ## ######    ######
+  ##   ##  ##     ## ##       ##     ## ##     ## ##             ##
+   ## ##   ##     ## ##       ##     ## ##     ## ##       ##    ##
+    ###     #######  ########  #######  ##     ## ########  ######
+ */
+.vol-listing-block {
+  padding: 10px;
+  vertical-align: bottom;
+
+  .vol-listing-text {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: dotted 1px $grey-color;
+    text-align: center;
+    h2 {
+      @include relative-font-size(1.0);
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    p {
+      font-size: $small-font-size;
+    }
+  }
+
+  .vol-listing-block-img {
+    position: relative;
+    width: 100%;
+    .vol-listing-img {
+      width: 100%;
+      @include aspect-ratio(8,11);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  @include media-query($on-palm) {
+    .vol-listing-text {
+      margin: 0px;
+      float: right;
+      width: 70%;
+    }
+    .vol-listing-block-img {
+      float: left;
+      width: 30%;
+    }
+  }
+}
+
+.ribbon {
+  position: absolute;
+  text-align: right;
+  top: 10%;
+  left: -10px;
+  z-index: 3;
+  span {
+    padding: 10px 20px;
+    font-size: $small-font-size;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.15em;
+    background: #cd1f23;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+.dogear-container {
+  width: 100%;
+  background-color: rgba(#002f4b, 0.5);
+  transition: background-color 200ms ease;
+  background-position: center top;
+  z-index: 2;
+  .dogear {
+    content: "";
+    position: absolute;
+    right: 0;
+    border: solid 0px;
+    border-color: $background-color $background-color transparent transparent;
+    border-radius: 0;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+    transition: border 0.2s ease-in-out;
+    z-index: 2;
+  }
+  &:hover .dogear {
+    border: solid 30px;
+    border-color: $background-color $background-color transparent transparent;
+  }
+}
+
+
+/**
+ ######## ####  ######   ##     ## ########  ########  ######
+ ##        ##  ##    ##  ##     ## ##     ## ##       ##    ##
+ ##        ##  ##        ##     ## ##     ## ##       ##
+ ######    ##  ##   #### ##     ## ########  ######    ######
+ ##        ##  ##    ##  ##     ## ##   ##   ##             ##
+ ##        ##  ##    ##  ##     ## ##    ##  ##       ##    ##
+ ##       ####  ######    #######  ##     ## ########  ######
+ */
+.figure-wrapper {
+  margin-top: $spacing-unit * 1.865;
+  margin-bottom: $spacing-unit * 1.865;
+  //border: 1px solid $grey-color-dark;
+  background-color: $grey-color-light;
+  padding: $spacing-unit * 0.5;
+  text-align: left;
+
+  img {
+    width: 100%;
+  }
+
+  .figure-caption {
+    color: $grey-color;
+    margin-top: $spacing-unit / 3;
+  }
+}

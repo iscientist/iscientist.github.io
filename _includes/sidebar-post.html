@@ -1,0 +1,18 @@
+{% if page.filename %}
+<div class="sidebar-section page-info">
+<h2 class="page-heading">This Paper</h2>
+  <a href="{{ page.filename | append: ".pdf" | prepend: "assets/pdf/" | relative_url }}">PDF</a>
+  {% include page-tree.html context="/_posts/page.filename" %}
+  {% include bibtex.html %}
+</div>
+
+<div class="sidebar-section page-outline">
+  <h2 class="page-heading">Outline</h2>
+  {% include page-tree.html
+              html=content
+              class="post-tree"
+              h_min=2 %}
+</div>
+{% endif %}
+
+{% include recent-articles.html %}

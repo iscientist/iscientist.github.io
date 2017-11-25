@@ -4,15 +4,34 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Welcome to the iScientist, McMaster University's undergraduate interdisciplinary research journal. We seek to publish original research, reviews, and academic letters produced by students during their undergraduate education. We publish work from a broad range of traditional scientific disciplines, as well as those that reside at the crossroads between them. Our focus is examining global issues from different scientific perspectives. Publication in The iScientist is currently restricted to students and alumni from the Integrated Science program at McMaster University.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## The Peer Review Process
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+All published work on The iScientist undergoes a full peer review process organized and performed by undergraduate students. Each arrticle is reviewed by at least two peer reviewers, who are asked to examine the originality, experimental rigour, and validity of the conclusions of works submitted. Editors organize these reviews and decide on publishing the work based on the reviews. In certain cases, submissions may be forwarded to appropriate faculty or instructors for additional input.
 
+## Open Access Policy
 
-[jekyll-organization]: https://github.com/jekyll
+The iScientist provides immediate open access to its content. We believe in the principle of making research freely available to the public in order to support a greater global exchange of knowledge.
+
+## Disclaimer
+
+The iScientist reflects the accomplishments of undergraduate students in a variety of scientific fields. As per the nature of undergraduate research, we recognize that work publised is subject to constraints and omissions as contributors are not (yet!) experts in their published fields. We invite readers to submit constructive comments and feedback to further our mutual knowledge of the published topics. If you have any questions or concerns, please do not hesitate to contact us at [{{ site.email }}](mailto:{{ site.email }}).
+
+## History
+
+The iScientist was founded in 2013 by the students and faculty of the Integrated Science program at McMaster University. The founding Editor-in-Chief of the iScientist was Andre Colgoni, Services Librarian and iCore member in the Integrated Science Program at McMaster University.
+
+Since then, we have been continuously endeavoring to showcase the excellent work of students of the Integrated Science Program at McMaster University.
+
+## Journal Sponsorship
+
+### Publisher
+
+The iScientist is organized and publised in-house by the Integrated Science Program at McMaster University.
+
+The iScientist could not be made possible without the help and support of the Integrated Science Program at McMaster University. The faculty members, administration staff, and students provides the work needed to make this publication a reality, and we are truly grateful for their continued work!
+
+### Sponsors
+
+We would like to extend our thanks to the Science Initiative Fund of the McMaster Science Society for their generous donation of funds to support The iScientist. The publication of physical copies of the journal, as well as our ability to host workshops to teach McMaster undergraduate students about the values and techniques of publishing and peer review, would not be possible without their generosity.

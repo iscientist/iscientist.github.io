@@ -1,0 +1,18 @@
+<div class="post-listing-block">
+  {%- if post.featureImage -%}
+  <a class="post-listing-overlay" href="{{ post.url | relative_url }}"></a>
+  <div class="post-listing-block-image" style="background-image: url({{ "/assets/img/" | append: post.filename | append: "/" | append: post.featureImage | relative_url }})">
+  {%- endif -%}
+    <span class="post-listing-field">{{ post.field }}</span>
+    <div class="post-listing-text">
+      <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <span class="post-meta">{{ post.date | date: date_format }} | </span>
+      <span class="post-meta">{%- for author in post.author -%}
+        {%- if forloop.index != 1 -%}&nbsp;•&nbsp;{%- endif -%}<span itemprop="name">{{ author.name }}</span>
+        {%- endfor -%}
+      </span>
+    </div>
+  {%- if post.featureImage -%}
+  </div>
+  {%- endif -%}
+</div>

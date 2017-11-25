@@ -1,0 +1,35 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+<div class="row">
+{% for volume in site.volumes reversed %}
+  <div class="col-md-4">
+    <div class="vol-listing-block">
+      <div class="vol-listing-block-img">
+        <a href={{ volume.url }}>
+          <div class="dogear-container">
+            {%- if forloop.first -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
+            <div class="dogear" style="background:{{ volume.basecolor }}"></div>
+            <div class="vol-listing-img" style="background-image:url({{ "/assets/covers/vol" | append: volume.number | append: ".jpg" | relative_url }})"></div>
+          </div>
+        </a>
+      </div>
+      <div class="vol-listing-text">
+        <h2><a href={{ volume.url }}>{{ volume.title }}</a></h2>
+        <span class="vol-meta">{{ volume.date | date: "%B %Y" }}</span>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<!--
+
+Articles are found on this site.
+Full published journals can be found [here](https://issuu.com/mcmasteriscientist).
+
+[Volume 1](https://issuu.com/mcmasteriscientist/docs/digital_issue).
+!-->

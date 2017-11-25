@@ -1,0 +1,30 @@
+{%- if include.date_format -%}
+{%- assign date_format=include.date_format -%}
+{%- else -%}
+{%- assign date_format="%B %Y" -%}
+{%- endif -%}
+<div class="content-highlight mainpage-section">
+  <div class="row">
+    <div class="col-5">
+      <div class="latest-issue-img-block">
+        <a href={{ include.volume.url }}>
+          <div class="dogear-container">
+            {%- if include.volume.number == site.volumes.size -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
+            <div class="dogear" style="background:{{ include.volume.basecolor }}"></div>
+            <div class="latest-issue-img" style="background-image:url({{ "/assets/covers/vol" | append: include.volume.number | append: ".jpg" | relative_url }})"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="latest-issue-text-overlay"></div>
+      <div class="latest-issue-text-block">
+        <a href={{ include.volume.url }}>
+        <h3>Volume</h3>
+        <h1 class="latest-issue-text-vol-number">{{ include.volume.number }}</h2>
+        <span class="vol-meta">{{ include.volume.date | date: date_format }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

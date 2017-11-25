@@ -1,0 +1,25 @@
+<div class="sidebar-section">
+<h2 class="page-heading">Latest Articles</h2>
+
+<ul class="post-listing-sidebar">
+  {% for post in site.posts %}
+    <li>
+      <div class="post-listing-text" {%- if post.featureImage -%}style="width:70%"{%- endif -%}>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+      </div>
+      {%- if post.featureImage -%}
+        <div class="post-listing-image" style="background-image: url({{ "/assets/img/" | append: post.filename | append: "/" | append: post.featureImage | relative_url }})">
+          <a class="post-listing-overlay" href="{{ post.url | relative_url }}"></a>
+        </div>
+      {%- endif -%}
+    </li>
+    {% if forloop.index == 10 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>
