@@ -16,7 +16,7 @@ The iScientist provides immediate open access to its content. We believe in the 
 
 ## Disclaimer
 
-The iScientist reflects the accomplishments of undergraduate students in a variety of scientific fields. As per the nature of undergraduate research, we recognize that work publised is subject to constraints and omissions as contributors are not (yet!) experts in their published fields. We invite readers to submit constructive comments and feedback to further our mutual knowledge of the published topics. If you have any questions or concerns, please do not hesitate to contact us at [{{ site.email }}](mailto:{{ site.email }}).
+The iScientist reflects the accomplishments of undergraduate students in a variety of scientific fields. As per the nature of undergraduate research, we recognize that work published is subject to constraints and omissions as contributors are not (yet!) experts in their published fields. We invite readers to submit constructive comments and feedback to further our mutual knowledge of the published topics. If you have any questions or concerns, please do not hesitate to contact us at [{{ site.email }}](mailto:{{ site.email }}).
 
 ## History
 

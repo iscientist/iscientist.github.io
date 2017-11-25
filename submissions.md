@@ -8,7 +8,7 @@ permalink: /submissions/
 
 Please visit the [iScientist submissions site](https://journals.mcmaster.ca/iScientist/about/submissions#onlineSubmissions) when you are ready to submit an article. Registration of a user account is required for submitting and checking the status of current submissions.
 
-Please submit all files in `.doc`, `.docx`, or `.rtf` format. Submissions are to be writted as [manuscripts using this template](https://drive.google.com/file/d/1JCZ-Zwi3UjJxcCaD5T8Vm10XAsGm4O6o/view). You will also have the choice to submit supplementary files if needed.
+Please submit all files in `.doc`, `.docx`, or `.rtf` format. Submissions are to be written as [manuscripts using this template](https://drive.google.com/file/d/1JCZ-Zwi3UjJxcCaD5T8Vm10XAsGm4O6o/view). You will also have the choice to submit supplementary files if needed.
 
 As well, please ensure that the submitted document contains no identifying features, such the names and affiliations of authors, as well as names in the acknowledgements. This is to ensure a blind peer-review process.
 
