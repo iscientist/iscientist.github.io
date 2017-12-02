@@ -19,7 +19,6 @@ description: >- # this means to ignore newlines until "baseurl:"
  The iScientist is McMaster University's undergraduate interdisciplinary research journal.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 color: "#47c76e"
-github_username:  iscientist
 facebook_username: theiscientist
 timezone: America/Toronto
 copyright: "The iScientist"

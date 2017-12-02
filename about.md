@@ -35,3 +35,5 @@ The iScientist could not be made possible without the help and support of the In
 ### Sponsors
 
 We would like to extend our thanks to the Science Initiative Fund of the McMaster Science Society for their generous donation of funds to support The iScientist. The publication of physical copies of the journal, as well as our ability to host workshops to teach McMaster undergraduate students about the values and techniques of publishing and peer review, would not be possible without their generosity.
+
+![SIF logo]({{ "/assets/misc/siflogo.png" | relative_url }})
