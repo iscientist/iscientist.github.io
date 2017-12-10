@@ -8,6 +8,10 @@ carousel:
     caption: "Mineral on a Gypsum Plate"
     pc: "Dhvanil Joshi"
     date: 2017
+  - image: Joshi2017Mineral.jpg
+    caption: "Photomicrograph of a Mineral"
+    pc: "Dhvanil Joshi"
+    date: 2017
   - image: Panuelos2016TurkeyPoint.jpg
     caption: "Atop a weather observations tower at Turkey Point, ON"
     pc: "Jonathan Panuelos"
@@ -32,9 +36,23 @@ carousel:
     caption: "White Tailed Deer (<i>Odocoileus virginianus</i>)"
     pc: "James Lai"
     date: 2017
+    contain: True
   - image: Lai2017SaskatchewanGlacier.jpg
     caption: "Saskatchewan glacier"
     pc: "James Lai"
+    date: 2017
+  - image: Simon2017Monkey.jpg
+    caption: "Monkey in Zhangjiajie, Hunan, China"
+    pc: "Chris Simon"
+    date: 2017
+    contain: True
+  - image: Simon2017Droplets.jpg
+    caption: "Intriguing droplets on a leaf in Zhangjiajie, Hunan, China"
+    pc: "Chris Simon"
+    date: 2017
+  - image: Simon2017River.jpg
+    caption: "Flowing river in Zhangjiajie, Hunan, China"
+    pc: "Chris Simon"
     date: 2017
   - image: Chong2017DundasPeak.jpg
     caption: "Dundas peak, Hamilton, ON"

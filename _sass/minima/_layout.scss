@@ -603,6 +603,11 @@ ul {
   }
   &:hover .post-listing-text {
     background-color: $background-color-opaque;
+    a {
+      color: $link-color;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
   }
 }
 .post-listing-text {

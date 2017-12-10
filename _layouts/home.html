@@ -17,7 +17,11 @@
     {% for slides in page.carousel %}
       <li>
         <div class="flexslider-image-box">
-          <div class="flexslider-image-background rellax" style="background-image: url({{ slides.image | prepend: "/assets/carousel/" | relative_url }})">
+          <div class="flexslider-image-background rellax"
+                style="background-image: url({{ slides.image | prepend: "/assets/carousel/" | relative_url }});
+                        background-color:black;
+                        {%- if slides.contain -%}background-size:contain;
+                        {%- else -%}background-size:cover;{%- endif -%}">
             <div class="flexslider-image-overlay"></div>
           </div>
           <div class="flexslider-image-overlay">
