@@ -44,7 +44,9 @@ Tidal heating, as noted above, consists of various different components. Attempt
 An equation quantifying the amount of heat contributed by a particular factor is necessary in order to be able to incorporate that factor into the mathematical model. In order to describe the amount of energy received by a celestial body per unit time (power), we use the equation
 
 $$
+\begin{align}
 \pi{}R_{Planet}^2(1-A)F_a = 4\pi{}R_{Planet}^{2}\sigma{}T_{Planet}^{4}
+\end{align}
 $$
 
 where $$A$$ is the (unitless) albedo of the planet, $$F_a$$ is the flux at the given orbital radius $$a$$ in $$W/m^2$$, $$R$$ is the radius of the planet (or moon), $$σ$$ is the Stefan-­‐ Boltzmann constant, and $$T$$ is the temperature of the celestial body in Kelvin — the value being solved for (Seager, 2010). The equation can be understood in physical terms as describing the celestial body in a state of thermal equilibrium where the incoming heat (left side) is balanced by the heat being lost (right side). On the left side, the incoming flux is $$F_a$$. This is multiplied by the area of the celestial body facing the star, which appears as a disc and is therefore represented by $$πR2$$. This value can then be multiplied by the $$(1-­A)$$ term to account for incoming energy that is not absorbed due to albedo. On the left side, the entire surface of the celestial body is assumed to radiate heat equally, so the full surface area of a sphere, $$4πR^2$$, is used. This is multiplied by $$σT^4$$, which is equal to the flux leaving the planet (as stated by the Stefan-­‐Boltzmann law).
@@ -52,18 +54,168 @@ where $$A$$ is the (unitless) albedo of the planet, $$F_a$$ is the flux at the g
 To calculate the stellar flux at a given distance, a second formula is required:
 
 $$
+\begin{align}
 F(a) = R_{Star}^2\sigma{}T_{Star}^{4}/a^{2}
+\end{align}
 $$
 
 where $$RStar$$ is the radius of the star, $$T_{Star}$$ is the temperature of the star, $$a$$ is the semi­‐major axis length in meters, and $$F$$ is the flux as a function of the semi-­major axis length, in $$W/m^2$$ (Seager, 2010). This formula can be interpreted as an expression of the conservation of energy: a star radiates $$4\pi{}R_{star}^2\sigma{}T_{Star}^4$$ of power (surface area $$4\pi{}R_{Star}^2$$ multiplied by flux $$\sigma{}T_{Star}^4$$), which is conserved as it moves to greater radii, so the same amount of energy is spread out over a larger surface area, $$4\pi{}a^2$$. The $$4π$$ cancels out, and the above expression is obtained. This equation also works for stellar radiation falling on a moon if $$R_{Moon}$$ and $$T_{Moon}$$ are used instead.
 
 There are many different formulae used to calculate the tidal heat. Here, four formulae are compared, from Heller and Barnes (2013), Henning, O'Connell and Sasselov (2009), Jackson, Barnes and Greenberg (2008), and Greenberg (2007), with additional information from Carone and Pätzold (2007) and the National Aeronautics and Space Administration (2014b, 2014c), along with the authors' estimates of the remaining parameters (see Appendix A). It was found that the calculated tidal energy was all of the same order of magnitude, indicating that all models are fairly good. However, the model by Heller and Barnes (2013) gave the value closest to the 6TW figure calculated by Greenberg (2007) by scaling Europa's physical and orbital parameters to those of Io, for which the tidal heating has been estimated through measurement. Thus, the model by Heller and Barnes (2013) was selected:
 
-TO BE COMPLETED
+$$
+\begin{align}
+E = \frac{3G^2k_{2,s}M^2_p(M_p+M_s)\frac{R^5_s}{a^9_s}\tau{}_s}{\sqrt{1-e^2_{ps}}^{15}}\left[\left(1+\frac{32}{2}e^2_{ps}+\frac{255}{8}e^4_{ps}+\frac{185}{16}e^6_{ps}+\frac{25}{64}e^8_{ps}\right)-\frac{1+\frac{15}{2}e^2_{ps}+\frac{45}{8}e^4_{ps}+\frac{5}{16}e^6_{ps}}{1+3e^2_{ps}+\frac{3}{8}e^4_{ps}}\right]
+\end{align}
+$$
+
+where G is the gravitational constant, k2,s is the second-order potential Love number (a dimensionless measure of the rigidity of a celestial body), Mp is the mass of the parent body (the planet in a moon-planet interaction or the star in a star-planet interaction), Ms is the mass of the satellite, aps is the orbital radius (semi-major axis) of the satellite about the parent body, Rs is the radius of the satellite, τs is the constant time lag factor (the duration of time lag for the bulge to reach its equilibrium position (Hut, 1981), eps is the eccentricity of the satellite's orbit around the parent body, and E is the energy released due to tidal heating per unit time, in watts.
+
+### Parameters Required for the Model
+
+Based on the above equations, the parameters that the model would require are listed in the table below:
+
+
+{% include table.html
+            title="Table 1"
+            caption="Parameters required for the habitable zone model calculations."
+            content="
+| Star | Planet | Moon |
+|---|---|---|
+| Radius | Radius | Radius |
+| Temperature | | |
+| Mass | Mass | Mass |
+| | Circumstellar semi-major axis | Circumplanetary semi-major axis |
+| | Eccentricity | Eccentricity |
+| | Second-order Love number | Second-order Love number |
+| | Time lag constant | Time lag constant |
+"
+%}
+
+Most of these parameters can easily be found for any given planet/moon in the solar system, and for several exoplanetary systems too. However, the Love number and time lag constant are based on physical properties of the bodies and are empirically determined. Thus, in this paper, they are approximated using known values from the Earth, meaning that the planets and moons are assumed to have an Earth-like composition. Similarly, the albedo of the planet is assumed to be equal to that of the Earth for the purposes of calculation, since data for this only exists for planets that can be directly observed, i.e., planets within this solar system, and not for exoplanets.
+
+### Assumptions
+
+As with most mathematical models, assumptions must be made in order for the system to be describable in mathematical terms. In this model, various factors are neglected due to feasibility. First of all, the greenhouse effect is neglected: this normally has a fairly large effect on the habitability of a planet. For example, Venus' greenhouse effect makes it hundreds of Kelvin warmer than predicted by solar radiation alone (Lang, 2011). As well, in tidal heating interactions, both bodies exert tidal forces on one another (Patiño Douce, 2011), but the tidal force of the satellite on the parent body is neglected since it will be much smaller than the effect the parent body has on the satellite, unless the satellite is close in size to the parent body. As well, it is neglected that in these interactions, the eccentricity and semi-major axis length change over time because the bodies slow each other down, and conservation of angular momentum leads the bodies to increase in distance from one another over time, which would change the magnitude of the tidal force over time (Heller and Barnes, 2013). Another limitation of the model used is that it does not account for Rossby wave tidal heating, which has been calculated to contribute a large portion of heat which is orders of magnitude greater than radiogenic heating and the types of tidal heating included in this model (Tyler, 2008). Finally, it is assumed that an exomoon receives the same stellar flux as its parent body, neglecting the fact that it is likely for the parent body to block stellar radiation from reaching the satellite for some portion of the satellite's orbit (Heller and Barnes, 2013).
+
+### Implementation of Model and Visualization
+
+The combined equation from above was input into the computer algebra software Maple 18 (Maplesoft, 2014). A code was then developed to associate different temperatures with different colours. In this model, the freezing and melting points of water were used as the thresholds for habitability. Temperatures greater than the boiling point of water were mapped to red colours. Temperatures from the boiling point of water to the stellar temperature were mapped linearly to the intensity of the red colour, with the most intense red colour corresponding to 1010K, and the boiling point having the least intense red colour. Likewise, temperatures from 0K to the melting point of water ice were mapped linearly to the colour blue, with the most intense blue corresponding to absolute zero. Temperatures considered habitable were green, with the most intense green corresponding to the temperature in the middle of the habitable range, with the intensity of colour decreasing linearly towards both edges.
+
+Initially, the model was intended to superimpose a circumstellar habitable zone (accounting for stellar radiation and stellar tidal heating on planets) with the circumplanetary habitable zone (accounting for stellar radiation and planetary tidal heating of moons) for the given planetary and moon data. However, it turned out that the circumplanetary habitable zone was extremely small relative to the circumstellar habitable zone, such that except at extreme orbital eccentricities, the circumplanetary habitable zone was almost invisible (Figure 1).
+
+{% include figure.html
+            fig="Figure1.png"
+            title="Figure 1"
+            caption="A comparison of the circumstellar planetary habitability with the circumplanetary moon habitability, using data from the Sun-Jupiter-Europa system, with Europa’s eccentricity increased to 0.94 from its regular value of 0.0094. The lower surface corresponds to the habitable zone of a Jupiter with the Sun at the origin, while the top surface corresponds to the habitable zone for a Europa, where the origin is Jupiter. Image produced using (Maplesoft, 2014). Green regions correspond to habitable temperatures; blue and red represent orbital distances that are too cold and too hot, respectively." %}
+
+Therefore, the model was redesigned to superimpose a circumstellar habitable zone for planets, based on stellar radiation and tidal heating of the planet by the star, with a circumstellar habitable zone for moons, based on stellar radiation and tidal heating of the moon by the planet, given a certain circumplanetary orbital semi-major axis of the moon.
+
+Superimposition was accomplished by the following precedence rules, applied in the given order:
+1. Habitable zones
+2. “Hot” zones
+3. Planetary temperature
+4. Moon temperature
+The results of applying these rules are summarized in the table below, where the subscript letters refer to the planet or the moon being the source of the temperature used to calculate the colour.
+
+{% include table.html
+            title="Table 2"
+            caption="Precedence rules used for determining the temperature used to calculate the colour of a point on the map."
+            content="
+| | | | Planet | |
+| | | Cold | Habitable | Hot |
+| | Cold | $$Blue_P$$ | $$Green_P$$ | $$Red_P$$ |
+| Moon | Habitable | $$Green_M$$ | $$Green_P$$ | $$Green_M$$ |
+| | Hot | $$Red_M$$ | $$Green_P$$ | $$Red_P$$ |
+"
+%}
+
+The complete mathematical model can be found in Appendix B.
+
+## Results and Discussion
+
+Although stellar illumination is the dominant factor in determining the habitable zone for planets, there are other factors involved. In this model, tidal heating is also considered: tidal heating provides additional heat to the planet, pushing the outer boundary of the habitable zone away. At the same time, the inner edge also moves outward due to the additional heat energy. What is not immediately evident is whether the orbital range of the habitable zone changes. It has been suggested that tidal heating shrinks the habitable zone (Barnes, et al., 2012). This theory is supported by the equations used in this model, as stellar radiation energy decreases with the square of distance to the star (aplanet), while tidal heating decreases with the ninth power of distance to the star (aplanet). This would suggest that the inner edge of the habitable zone should be pushed out a greater amount than the outer edge, shrinking the habitable zone. To ascertain that this was indeed the case, the equations used in the model were solved to find the orbital semi-major axis lengths where the planet temperature was equal to the freezing and melting points of water. As the results in Appendix C show, increased eccentricity, which corresponds to increased tidal heating, shrinks the habitable zone range.
+
+As can be expected, the superimposition method used in this paper, where habitability of either the planet or moon was sufficient for an orbital radius to be considered habitable, increased the overall habitable zone. However, this effect is not very noticeable at low moon eccentricities like those that are found for most moon-planet systems in this solar system (Figure 2).
+
+{% include figure.html
+            fig="Figure2.png"
+            title="Figure 2"
+            caption="A Jupiter-sized planet with a Europa-sized moon, with the planet orbiting at 1AU from the star. The planet has a constant eccentricity of 0.04, while the moon has eccentricity 0.04 in one row, and an eccentricity of 0.2 in the second row. In the system with eccentricity of 0.04, the combined habitable zone is not visibly different from that of either the planet or moon. At an eccentricity of 0.02, the combined habitable zone is visibly larger than the planetary habitable zone alone. As can be seen, the system, represented by the black dot, normally too cold for life, falls into the habitable zone due to tidal heating if the moon’s eccentricity is high enough. Image generated using (Maplesoft, 2014). Colour scheme is the same as in Figure 1, and as described in the Methods. All axes are on the same scale." %}
+
+By synthesizing a model from multiple sources in the existing literature, we are able to consider a wider range of factors. This allows us to more accurately predict the habitability of an exoplanet (and potential exomoon) using data available through today’s technologies. To demonstrate this, the model is applied to the Sun/Jupiter/Europa system, as well as the Kepler-22/Kepler-22b system (no exomoons have yet been detected due to limitations of technology). Figure 3 shows that the Jupiter-Europa system falls outside of the habitable zone: a temperature of 110.65K is calculated for Jupiter, and a temperature of 111.26K is calculated for Europa. These temperatures are far below the freezing point of water at atmospheric pressure, indicating that the presence of liquid water is unlikely.
+
+{% include figure.html
+            fig="Figure3.png"
+            title="Figure 3"
+            caption="The combined habitable zone for the Sun-Jupiter-Europa system. Jupiter and Europa both clearly fall outside the habitable zone. Colour scheme is the same as in Figure 1, and as described in the Methods." %}
+
+For Kepler-22b (Figure 4), the calculated temperature is 295.84K, indicating it could be habitable.
+
+{% include figure.html
+            fig="Figure4.png"
+            title="Figure 4"
+            caption="A plot of the Kepler-22 and Kepler-22b system. Kepler-22b apparently lies within the star’s habitable zone. Colour scheme is the same as in Figure 1, and as described in the Methods." %}
+
+The calculated temperature for Europa is much colder than the freezing point of water, despite evidence suggesting that Europa has a liquid water ocean. Likewise, when the model is run on the Earth, it predicts a temperature on Earth lower than the freezing point of water (see Appendix B). These results are indicative of the simplifications made in this model. For instance, Rossby waves are expected to contribute greatly to Europa’s heat, while the Earth is kept warmer than predicted due to the greenhouse effect.
+
+## Conclusion
+
+In this paper, a model of circumstellar planetary and moon habitable zones was produced by combining aspects of previous work in the literature. The resulting model accounts for both stellar radiation and tidal heating when calculating the habitable zone around a star for both a planet and for a moon orbiting the planet at a given circumplanetary radius. Through the calculations used in the model, it was shown that the addition of tidal heating shrinks habitable zones compared to those calculated by models that account only for stellar radiation. However, because moons may be tidally heated to temperatures allowing liquid water at circumstellar radii where water would normally be frozen, the model also demonstrates that the habitable zone may extend further than previously thought. However, the model bears some weaknesses due to several simplifying assumptions made to avoid factors that are difficult to calculate using available astronomical data. Nevertheless, this model is a good starting place for gaining a more accurate understanding of the habitable zone around a star. Future work could build on this by adding more factors into the calculations.
+
+## Acknowledgements
+
+The author would like to acknowledge the supervision of Dr. George Dragomir (McMaster University), and the assistance provided throughout this project.
 
 
 {% include references.md
             reference="
+Barnes, R, Mullins, K., Goldblatt, C., Meadows, V. S., Kastings, J. F. and Heller, R., 2012. Orbital Dynamics and Habitability I: Triggering a Runaway Greenhouse via Tidal Heating. In: American Astronomical Society Division on Dynamical Astronomy, 43rd meeting. Mt. Hood, Oregon, 6-10 May 2012. Available at: <http://adsabs.harvard.edu/abs/2012DDA....43.0206B> [Accessed 25 March, 2015].
 
+Carone, L. and Pätzold, M., 2007. Constraints on the tidal dissipation factor of a main sequence star: the case of OGLE-TR-56b. Planetary and Space Science, 55(5), pp.643-650.
+
+Des Marais, D. J., Nuth, J. A., III, Allamandola, L. J., Boss, A. P., Farmer, J. D., Hoehler, T. M., Jakosky, B. M., Meadows, V. S., Pohorille, A., Runnegar, B. and Spormann, A. M., 2008. The NASA Astrobiology Roadmap. Astrobiology, 8(4), pp.715-730.
+
+Doyle, L. R., Billingham, J. and DeVincenzi, D. L., 1998. Circumstellar habitable zones: an overview. Acta Astronautica, 42(10-12), pp.599-605.
+
+Frank, E. A., Meyer, B. S. and Mojzsis, S. J., 2014. A radiogenic heating evolution model for cosmochemically Earth-like exoplanets. Icarus, 243, pp.274-286.
+
+Greenberg, R., 2007. Europa: the ocean moon: search for an alien biosphere. Chichester: Praxis Publishing.
+
+Heller, R. and Barnes, R., 2013. Exomoon habitability constrained by illumination and tidal heating. Astrobiology, 13(1), pp.18-46.
+
+Henning, W. G., O'Connell, R. J. and Sasselov, D. D., 2009. Tidally heated terrestrial exoplanets: viscoelastic response models. The Astrophysical Journal, 707(2), pp.988-999.
+
+Horedt, G. P., 1980. Gravitational heating of planets. Physics of the Earth and Planetary Interiors, 21(1), pp.22-30.
+
+Hut, P., 1981. Tidal evolution in close binary systems. Astronomy and Astrophysics, 99(1), pp. 126-140.
+
+Jackson, B., Barnes, R. and Greenberg, R., 2008. Tidal heating of terrestrial extrasolar planets and implications for their habitability. Monthly Notices of the Royal Astronomical Society, 391(1), pp.237-245.
+
+Kaltenegger, L. and Segura, A., 2011. Habitable zone. In: M. Gargaud, ed. 2011. Encyclopedia of astrobiology. Heidelberg: Springer. pp.719-721.
+
+Lang, K. R., 2011. The Cambridge guide to the solar system. Cambridge: Cambridge University Press.
+
+Maplesoft, 2014. Maple (18). [computer program] Maplesoft.
+
+Mottl, M. J., Glazer, B. T., Kaiser, R. I. and Meech, K. J., 2007. Water and astrobiology. Chemie der Erde - Geochemistry, 67(4), pp.253-282.
+
+National Aeronautics and Space Administration, 2014a. About astrobiology. [online] Available at: <https://astrobiology.nasa.gov/about-astrobiology/> [Accessed 17 February 2015].
+
+National Aeronautics and Space Administration, 2014b. Sun: facts and figures. [online] Available at: < http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sun&Display=Facts> [Accessed 18 February 2015].
+
+National Aeronautics and Space Administration, 2014c. Jupiter: facts and figures. [online] Available at: <https://solarsystem.nasa.gov/planets/profile.cfm?Object=Jupiter&Display=Facts> [Accessed 18 February 2015].
+
+National Aeronautics and Space Administration, 2014d. Europa: facts and figures. [online] Available at: <http://solarsystem.nasa.gov/planets/profile.cfm?Object=Jup_Europa&Display=Facts&System=Metric> [Accessed 18 February 2015].
+
+National Aeronautics and Space Administration, 2014e. Earth: facts and figures. [online] Available at: < http://solarsystem.nasa.gov/planets/profile.cfm?Object=Earth&Display=Facts> [Accessed 26 March 2015].
+
+National Aeronautics and Space Administration, 2014f. Earth’s Moon: facts and figures. [online] Available at: <http://solarsystem.nasa.gov/planets/profile.cfm?Object=Moon&Display=Facts> [Accessed 26 March 2015].
+
+Patiño Douce, A., 2011. Thermodynamics of the Earth and planets. Cambridge: Cambridge University Press.
+
+Seager, S., 2010. Exoplanet atmospheres: physical processes. Princeton: Princeton University Press.
+
+Tyler, R. H., 2008. Strong ocean tidal flow and heating on moons of the outer planets. Nature, 456(7223), pp.770-772.
 "
 %}

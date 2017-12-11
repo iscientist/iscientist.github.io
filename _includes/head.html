@@ -43,6 +43,9 @@
   <script src="{{ "/flexslider/initialize.flexslider.js" | relative_url }}"></script>
   {%- endif -%}
 
+  <!-- for random-articles !-->
+  <script src="{{ "/js/randomfetch.js" | relative_url }}"></script>
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
