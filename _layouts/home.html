@@ -42,13 +42,17 @@
   {% endif %}
 </div>
 
+<div class="mainpage-notice-strip">
+  <div class="mainpage-notice-caption">
+    {{ content }}
+  </div>
+</div>
+
 <div class="wrapper" id="mainpage">
   <div class="row">
     <div class="col-md-8">
 
       <div class="home">
-        {{ content }}
-
 
         {% include volume-highlight.html volume=site.volumes.last %}
 

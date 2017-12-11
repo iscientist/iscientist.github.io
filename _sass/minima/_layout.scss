@@ -712,7 +712,7 @@ ul {
         left: 0;
         bottom: 0;
         padding: 10px;
-        padding-left: 30px;
+        padding-left: $spacing-unit;
         margin: 0px;
         margin-left: 50px;
         border-left: solid 2px $grey-color-light;
@@ -726,6 +726,43 @@ ul {
         p {
           font-size: $small-font-size;
         }
+      }
+    }
+  }
+}
+
+/**
+ ##    ##  #######  ######## ####  ######  ########  ######
+ ###   ## ##     ##    ##     ##  ##    ## ##       ##    ##
+ ####  ## ##     ##    ##     ##  ##       ##       ##
+ ## ## ## ##     ##    ##     ##  ##       ######    ######
+ ##  #### ##     ##    ##     ##  ##       ##             ##
+ ##   ### ##     ##    ##     ##  ##    ## ##       ##    ##
+ ##    ##  #######     ##    ####  ######  ########  ######
+ */
+.mainpage-notice-strip {
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit * 0.5;
+  background-color: indianred;
+  color: white;
+
+  .mainpage-notice-caption {
+    padding-top: $spacing-unit * 0.5;
+    margin-left: 50px;
+    border-left: solid 2px $grey-color-light;
+
+    p {
+      padding-left: $spacing-unit;
+      margin: 0px;
+    }
+    a {
+      color: white;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+
+      &:hover {
+        color: black;
+        text-decoration: none;
       }
     }
   }

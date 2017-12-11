@@ -59,3 +59,4 @@ carousel:
     pc: "Michael Chong"
     date: 2017
 ---
+**Notice:** We are accepting submissions for your science-themed pictures, to be featured right here on our front-page! Please submit your pictures [by filling out this form.](https://goo.gl/forms/2MdajH9aN2u22LhE2)
