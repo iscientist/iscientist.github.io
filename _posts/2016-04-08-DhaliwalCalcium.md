@@ -45,8 +45,10 @@ We hypothesized that an increase in calcium availability would allow plants to i
 
 This experiment involved two blocks of 12 Colombian wild type *A. thaliana* samples in the rosette life-stage over a period of 11 days. In order to make a baseline calcium-deficient series of plants, all plant samples were treated with the fertilizer described in Table 1. This solution substitutes calcium nitrate with sodium nitrate, and this increase in sodium concentration reduces the ability of plants to uptake available calcium in the soil. Sub-irrigation took place in individual plastic dishes to apply 100 mL of fertilizer to each plant for exactly 3 hours. This was to ensure maximum fertilizer sequestration by the far-reaching roots and to avoid the physically disruptive process of super-irrigation (Cox, 2001).
 
-Table 1. Ratios of compounds added to create the calcium-deficient fertilizer administered to all *Arabidopsis thaliana* samples prior to experiment.
-
+{% include table.html
+            title="Table 1"
+            caption="Ratios of compounds added to create the calcium-deficient fertilizer administered to all *Arabidopsis thaliana* samples prior to experiment."
+            content="
 | **Chemical** | **Amount Added** |
 |---|---|
 | $$KNO_3$$ | 11 mL of 1 M solution |
@@ -55,6 +57,8 @@ Table 1. Ratios of compounds added to create the calcium-deficient fertilizer ad
 | $$Fe-EDTA$$ | 2.2 mL of Fe-EDTA solution (1 mL stock = 5 mg Fe) |
 | Micronutrients | 2.86 g of H3BO3, 1.81 g of MnCl2 • 4 H2O, 0.11 g of ZnCl2, 0.05 g of CuCl2 • 2H2O, and 0.025g of Na2MoO4 • 2H2O in 1 L of solution |
 | $$NaNO_3$$ | 11 mL of 1 M solution |  
+"
+%}
 
 Subsequently, plants were randomly assigned levels within the categorical designation of calcium availability and placed in two blocks (Figure 1). These levels – no calcium, low calcium, medium calcium, and high calcium - refer to the amount of calcium added to the plants during treatment.
 

@@ -1,0 +1,8 @@
+<div class="table-wrapper">
+  {% if include.caption %}
+    <div class="table-caption">
+      {{ include.title | prepend: "**" | append: ":** " | append: include.caption | markdownify }}
+    </div>
+  {% endif %}
+  {{ include.content | markdownify }}
+</div>

@@ -6,7 +6,6 @@ layout: page
 {%- assign volume=site.volumes[volumeindex] -%}
 {%- include volume-highlight.html volume=volume date_format=date_format -%}
 
-<h3>Print published on {{ page.date | date: "%B %-d, %Y" }}</h3>
 <div class="post-listing-home">
   {%- for post in site.posts -%}
   {%- if post.volume == page.number -%}

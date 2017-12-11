@@ -48,12 +48,18 @@ It was determined that the freezing point of the distilled water control was -0.
 
 Qualitatively, there seemed to be no relationship between FPD and BPE as shown by the different slopes and by the absolute value of FPD being consistently higher than the absolute value of BPE. However, quantitatively, the rates at which these variance of transition temperatures change by concentration of solute are outlined in Table 1. Normalizing the proportionality by the van’t Hoff factors of the solutes, it has been found that boiling point elevates 35% as quickly as freezing point depresses upon changing concentration.
 
+{% include table.html
+            title="Table 1"
+            caption="Transition constants for sodium chloride, acetic acid, and sucrose."
+            content="
 |  | $$K_{fp}$$(°C/mol/kg) | $$K_{bp}$$(°C/mol/kg) | $$K_{bp}/K_{fp}$$/i |
 |-------|--------|---------|
 | Sodium chloride | 3.6 | 2.2 | 0.3002 |
 | Acetic acid | 2.1 | 0.63 | 0.3017 |
 | Sucrose | 2.6 | 1.2 | 0.4536 |
 |  |  |  |  0.35 +/- 0.09 s.d. |
+"
+%}
 
 ## Discussion
 

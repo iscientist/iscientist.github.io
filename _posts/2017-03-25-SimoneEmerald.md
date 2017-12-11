@@ -63,8 +63,10 @@ Censused regions of the McMaster Forest already associated species names with ta
 
 While this preliminary survey did not include all land classes in the McMaster Forest, it provided a comprehensive assessment of the state of infestation at the research site. Evidence of EAB infestation was found in all 8 surveyed land classes, in the proportions shown in Table 1.
 
-Table 1: Proportion of ash trees infested in each land class.
-
+{% include table.html
+            title="Table 1"
+            caption="Proportion of ash trees infested in each land class."
+            content="
 | Land Class | Proportion of Ash Infested |
 |----|----|
 | Mixed plantation | 0.667 |
@@ -75,6 +77,8 @@ Table 1: Proportion of ash trees infested in each land class.
 | Dry fresh sugar maple beech deciduous forest | 0.4 |
 | Dry fresh black walnut deciduous woodland type | 0.333 |
 | Gray dogwood deciduous shrub thicket | 0.031 |
+"
+%}
 
 Initially, observation of EAB activity at the front of the Forest prompted a wider investigation of the extent of infestation. This resultant survey found that EAB infestation was not limited to the front region, and had actually spread to affect trees across the entire site (Figure 3). Infested ash trees were observed to often also display extensive woodpecker damage; almost 83% of infested trees also showed considerable bark mutilation by woodpeckers. In future surveys, this could serve as a useful indicator for potential EAB infestation.
 

@@ -874,3 +874,55 @@ ul {
     margin-top: $spacing-unit / 3;
   }
 }
+
+/**
+ ########    ###    ########  ##       ########  ######
+    ##      ## ##   ##     ## ##       ##       ##    ##
+    ##     ##   ##  ##     ## ##       ##       ##
+    ##    ##     ## ########  ##       ######    ######
+    ##    ######### ##     ## ##       ##             ##
+    ##    ##     ## ##     ## ##       ##       ##    ##
+    ##    ##     ## ########  ######## ########  ######
+ */
+.table-wrapper {
+  margin-top: $spacing-unit * 1.865;
+  margin-bottom: $spacing-unit * 1.865;
+  //border: 1px solid $grey-color-dark;
+  background-color: $grey-color-light;
+  padding: $spacing-unit * 0.5;
+  text-align: left;
+
+  table {
+    min-width: 100%;
+    border-collapse: collapse;
+    overflow-x: scroll;
+    z-index: 2;
+
+    thead {
+      border-bottom: 2px solid $grey-color-dark;
+    }
+    tr {
+      border-bottom: 2px solid transparent;
+
+      td {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+      }
+
+      &:nth-child(odd) {
+        background-color: $grey-color-light;
+      }
+      &:nth-child(even) {
+        background-color: white;
+      }
+      &:hover td {
+        border-bottom: 2px solid $brand-accent;
+      }
+    }
+  }
+
+  .table-caption {
+    color: $grey-color;
+    margin-bottom: $spacing-unit / 3;
+  }
+}
