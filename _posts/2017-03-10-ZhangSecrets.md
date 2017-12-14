@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Secrets in Math: How do we Fly? "
+title:  "Secrets in Math: How do We Fly? "
 date:   2017-03-10
 volume: 2
 categories: original

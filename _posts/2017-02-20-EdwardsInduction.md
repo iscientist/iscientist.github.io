@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Induction of the Jasmonic Acid (JA) Plant Defence Pathway Affecting the Host-Plant Selection of <i>Myzus Persicae</i>"
+title:  "The Induction of the Jasmonic Acid (JA) Plant Defence Pathway Affecting the Host-Plant Selection of <i>Myzus persicae</i>"
 date:   2017-02-20
 volume: 2
 categories: original

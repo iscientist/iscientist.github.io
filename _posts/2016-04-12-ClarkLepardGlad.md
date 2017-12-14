@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Glad You Came: The History of the Science concerning the Study of the Female Orgasm"
+title:  "Glad You Came: The History of the Science Concerning the Study of the Female Orgasm"
 date:   2016-04-12
 volume: 1
 categories: original

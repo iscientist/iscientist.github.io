@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Effects of Salinity and Activated Charcoal on the Herbivory of Arabidopsis thaliana by <i>Myzus persicae</i>"
+title:  "The Effects of Salinity and Activated Charcoal on the Herbivory of <i>Arabidopsis thaliana</i> by <i>Myzus persicae</i>"
 date:   2017-03-30
 volume: 2
 categories: original
