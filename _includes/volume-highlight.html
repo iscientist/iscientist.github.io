@@ -9,9 +9,15 @@
       <div class="latest-issue-img-block">
         <a href={{ include.volume.url }}>
           <div class="dogear-container">
-            {%- if include.volume.number == site.volumes.size -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
+            {%- if include.volume.current -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
+            {%- if include.volume.upcoming -%}<div class="ribbon"><span>Upcoming</span></div>{%- endif -%}
+            {%- if include.volume.upcoming -%}
+            <div class="dogear" style="background:{{ include.volume.basecolor }}"></div>
+            <div class="latest-issue-img" style="background-image:url({{ "/assets/favicon/new.png" | relative_url }})"></div>
+            {%- else -%}
             <div class="dogear" style="background:{{ include.volume.basecolor }}"></div>
             <div class="latest-issue-img" style="background-image:url({{ "/assets/covers/vol" | append: include.volume.number | append: ".jpg" | relative_url }})"></div>
+            {%- endif -%}
           </div>
         </a>
       </div>

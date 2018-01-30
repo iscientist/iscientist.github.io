@@ -54,7 +54,11 @@
 
       <div class="home">
 
-        {% include volume-highlight.html volume=site.volumes.last %}
+        {% for volume in site.volumes %}
+          {% if volume.current %}
+            {% include volume-highlight.html volume=volume %}
+          {% endif %}
+        {% endfor %}
 
         <div class="mainpage-section">
           <h1 class="page-heading">Latest Articles</h1>

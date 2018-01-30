@@ -11,9 +11,15 @@ permalink: /publications/
       <div class="vol-listing-block-img">
         <a href={{ volume.url }}>
           <div class="dogear-container">
-            {%- if forloop.first -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
+            {%- if volume.current -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
+            {%- if volume.upcoming -%}<div class="ribbon"><span>Upcoming</span></div>{%- endif -%}
+            {%- if volume.upcoming -%}
+            <div class="dogear" style="background:#39B54A"></div>
+            <div class="vol-listing-img" style="background-image:url({{ "/assets/favicon/new.png" | relative_url }})"></div>
+            {%- else -%}
             <div class="dogear" style="background:{{ volume.basecolor }}"></div>
             <div class="vol-listing-img" style="background-image:url({{ "/assets/covers/vol" | append: volume.number | append: ".jpg" | relative_url }})"></div>
+            {%- endif -%}
           </div>
         </a>
       </div>
