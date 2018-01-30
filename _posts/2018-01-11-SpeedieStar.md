@@ -3,7 +3,6 @@ layout: post
 title:  "Star Formation and Morphology of Galaxies in Local Compact Groups"
 date:   2018-01-11
 volume: 3
-categories: original
 field: Astronomy
 featureImage: Figure1a.jpg
 tags: ["compact groups", "galaxies: star formation", "galaxies: morphology"]
@@ -142,19 +141,19 @@ where $$n$$ is the number of member galaxies and $$R_n$$ is the distance between
 
 ### Correlation of group radius definitions
 
-In the left panel of Figure 8 we plot our definition of compact group radius, $$R_{rms}$$ against that of Sohn et al. (2016), $$R_{Gr}$$. As is to be expected based on how it is calculated, $$R_{rms}$$ is always smaller than $$R_{Gr}$$, and all the points lie below the one-to-one line. For small, tight-knit groups, the two definitions do not differ greatly. However, for groups with a galaxy at a large radial distance (corresponding to a large $$R_{Gr}$$), the root mean square $$R_rms$$ is significantly smaller than $$R_{Gr}$$. We expect to see radial trends with $$R_rms$$ that are similar but not identical to those of $$R_{Gr}$$.
+In the left panel of Figure 8 we plot our definition of compact group radius, $$R_{rms}$$ against that of Sohn et al. (2016), $$R_{Gr}$$. As is to be expected based on how it is calculated, $$R_{rms}$$ is always smaller than $$R_{Gr}$$, and all the points lie below the one-to-one line. For small, tight-knit groups, the two definitions do not differ greatly. However, for groups with a galaxy at a large radial distance (corresponding to a large $$R_{Gr}$$), the root mean square $$R_{rms}$$ is significantly smaller than $$R_{Gr}$$. We expect to see radial trends with $$R_{rms}$$ that are similar but not identical to those of $$R_{Gr}$$.
 
 {% include figure.html
             fig="Figure8.png"
             title="Figure 8"
-            caption="A comparison between two definitions of compact group radius. *Left panel*: $$R_{Gr}$$ is the radius of the smallest circle enclosing all group member galaxies, as used in the MLCG by Sohn et al. (2016). In other words, the projected distance to the member farthest from the centre defines the radius of the group. $$R_rms$$ is the root mean square of the projected distance of all members from their geometrical centre. *Right panel*: The specific radius of each member galaxy (distance from the group centre as a proportion of its group’s radius) is plotted for the two group radius definitions, RGr and $$R_rms$$." %}
+            caption="A comparison between two definitions of compact group radius. *Left panel*: $$R_{Gr}$$ is the radius of the smallest circle enclosing all group member galaxies, as used in the MLCG by Sohn et al. (2016). In other words, the projected distance to the member farthest from the centre defines the radius of the group. $$R_{rms}$$ is the root mean square of the projected distance of all members from their geometrical centre. *Right panel*: The specific radius of each member galaxy (distance from the group centre as a proportion of its group’s radius) is plotted for the two group radius definitions, RGr and $$R_{rms}$$." %}
 
 In the right panel of Figure 8 we see what the two different definitions of group radius mean for the galaxies’ normalized radial distance (“specific radius”). In this plot, the problem with the $$R_{Gr}$$ definition is clearly visible. At $$R/R_{Gr} \approx 1$$ is an artificial pile-up of galaxies that live on the edge of the group. The cut-off is not strictly at $$R/R_{Gr} = 1$$ because we normalized to the $$R_{Gr}$$ of the MLCG instead of to our own max($$R_N$$); the assumed cosmological parameters and details of numerical integration involved in our calculation of angular diameter distance likely differs slightly to that undertaken by Sohn et al. There is nothing physically significant about a specific radius of 1, and $$R_{rms}$$ rightfully extends past 1 on its axis.
 
 ### Mass segregation
 
 Previous work has shown that galaxy properties depend most strongly on their own stellar mass, therefore any trend in galaxy properties needs to be independent of radial trends in stellar mass in order to be significant. We explore trends of stellar mass with specific radius in Figure 9. Galaxy stellar mass is plotted as a function of normalized radial distance from the group centre for the two group definitions.
-In both cases the trend is clear: galaxies with higher stellar mass tend to live in the centre of the group, and those with lower stellar mass on the outskirts. The range on the y-axis, however, is small ($$\Delta{}\log(Mstar/Mdot) \approx{} 0.25$$). We have binned the x-axis by frequency, making apparent the pile-up at $$R/R_{Gr} \approx{} 1$$, which does not occur in the right panel where specific radius is $$R/R_{rms}$$. For the remainder of the paper we fully adopt the $$R_{rms}$$ definition of group radius for use in exploring radial trends.
+In both cases the trend is clear: galaxies with higher stellar mass tend to live in the centre of the group, and those with lower stellar mass on the outskirts. The range on the y-axis, however, is small ($$\Delta{}\log(M_{star}/M_{dot}) \approx{} 0.25$$). We have binned the x-axis by frequency, making apparent the pile-up at $$R/R_{Gr} \approx{} 1$$, which does not occur in the right panel where specific radius is $$R/R_{rms}$$. For the remainder of the paper we fully adopt the $$R_{rms}$$ definition of group radius for use in exploring radial trends.
 
 {% include figure.html
             fig="Figure9.png"
@@ -170,7 +169,7 @@ Figure 10 shows how the rate at which a galaxy forms stars is related to its rad
             title="Figure 10"
             caption="Mean galaxy specific star formation rate as a function of specific radius (normalized radial distance from group centre) for all 3656 galaxies in our sample with data in MPA JHU. In greens and blues are four stellar mass bins, and in red is the total unbinned mean. The x-axis is binned by frequency and error bars correspond to 1 SE." %}
 
-In Figure 11 we differentiate compact groups based on their velocity dispersion. Since $$\sigma{}$$ is such an uncertain quantity (see Figure 5), we make cuts for only the highest ($$\sigma{}\geq{}300\ km/s$$) and lowest ($$\sigma{}\leq{}100\ km/s$$), instead of dividing the sample in half. Furthermore, we control for mixing of galaxies with different stellar masses by taking only galaxies with $$9.5 \leq{} \log(Mstar/Mdot) \leq{} 10.5$$ (Figure 9 estimates the issue of mass segregation). The stellar mass distributions of the two velocity dispersion samples are different (low, $$<\log(Mstar/Mdot)>$$ of $$9.8$$ compared to high, $$<\log(Mstar/Mdot)>$$ of $$10.1$$) and we found that neglecting to account for this yields a misleading radial trend in the low  sample. The mean log stellar mass of the resulting galaxies plotted in Figure 11 are different by a factor of only 0.04 dex.
+In Figure 11 we differentiate compact groups based on their velocity dispersion. Since $$\sigma{}$$ is such an uncertain quantity (see Figure 5), we make cuts for only the highest ($$\sigma{}\geq{}300\ km/s$$) and lowest ($$\sigma{}\leq{}100\ km/s$$), instead of dividing the sample in half. Furthermore, we control for mixing of galaxies with different stellar masses by taking only galaxies with $$9.5 \leq{} \log(M_{star}/M_{dot}) \leq{} 10.5$$ (Figure 9 estimates the issue of mass segregation). The stellar mass distributions of the two velocity dispersion samples are different (low, $$<\log(M_{star}/M_{dot})>$$ of $$9.8$$ compared to high, $$<\log(M_{star}/M_{dot})>$$ of $$10.1$$) and we found that neglecting to account for this yields a misleading radial trend in the low  sample. The mean log stellar mass of the resulting galaxies plotted in Figure 11 are different by a factor of only 0.04 dex.
 
 {% include figure.html
             fig="Figure11.png"

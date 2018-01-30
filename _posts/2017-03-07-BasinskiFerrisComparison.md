@@ -3,7 +3,6 @@ layout: post
 title:  "Comparison of Mathematical Models of Opinion Dynamics"
 date:   2017-03-07
 volume: 2
-categories: original
 field: Mathematics
 tags: ['sociophysics', 'Sznajd Model', 'opinion dynamics', 'mathematical modelling', 'MATLAB']
 filename: 2017-03-07-BasinskiFerrisComparison

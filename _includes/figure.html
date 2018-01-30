@@ -2,7 +2,7 @@
   {% if include.url %}
   <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
   {% endif %}
-    <img src="{{ "/assets/img/" | append: page.filename | append: "/" | append: include.fig | relative_url }}" alt="{{ include.title }}"/>
+    <img src="{{ page.date | date: "/assets/img/%Y-%m-%d-" | append: page.slug | append: "/" | append: include.fig | relative_url }}" alt="{{ include.title }}"/>
   {% if include.url %}
   </a>
   {% endif %}

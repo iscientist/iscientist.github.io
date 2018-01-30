@@ -9,23 +9,17 @@ permalink: /publications/
   <div class="col-md-4">
     <div class="vol-listing-block">
       <div class="vol-listing-block-img">
-        <a href={{ volume.url }}>
-          <div class="dogear-container">
-            {%- if volume.current -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
-            {%- if volume.upcoming -%}<div class="ribbon"><span>Upcoming</span></div>{%- endif -%}
-            {%- if volume.upcoming -%}
-            <div class="dogear" style="background:#39B54A"></div>
-            <div class="vol-listing-img" style="background-image:url({{ "/assets/favicon/new.png" | relative_url }})"></div>
-            {%- else -%}
-            <div class="dogear" style="background:{{ volume.basecolor }}"></div>
-            <div class="vol-listing-img" style="background-image:url({{ "/assets/covers/vol" | append: volume.number | append: ".jpg" | relative_url }})"></div>
-            {%- endif -%}
-          </div>
-        </a>
+          {% include volume-coverpicture.html volume=volume div_class="vol-listing-img"%}
       </div>
       <div class="vol-listing-text">
         <h2><a href={{ volume.url }}>{{ volume.title }}</a></h2>
-        <span class="vol-meta">{{ volume.date | date: "%B %Y" }}</span>
+        <span class="vol-meta">
+          {%- if volume.upcoming -%}
+            {{ volume.season }}
+          {%- else -%}
+            {{ volume.date | date: "%B %Y" }}
+          {%- endif -%}
+        </span>
       </div>
     </div>
   </div>

@@ -3,7 +3,6 @@ layout: post
 title:  "A Mathematical Model of Circumstellar and Circumplanetary Habitable Zones Accounting for Multiple Heat Sources"
 date:   2016-04-08
 volume: 1
-categories: original
 field: Astronomy
 tags: [mathematical model, habitable zones, tidal heating, astrobiology, exoplanets, exomoons, Maple, visualization]
 filename: 2016-04-08-LaiMathematical

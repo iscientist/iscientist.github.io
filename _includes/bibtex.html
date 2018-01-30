@@ -1,7 +1,7 @@
 <details>
 <summary>BibTeX</summary>
   <p class="post-citation">
-    @article&#123;{{ page.filename }},<br>
+    @article&#123;{{ page.date | date: "%Y-" | append: page.slug }},<br>
       title=&#123;{{ page.title }}&#125;,<br>
       author=&#123;{%- for author in page.author -%}
         {%- if forloop.first != true -%}&nbsp;and&nbsp;{%- endif -%}{{ author.name }}

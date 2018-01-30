@@ -3,7 +3,6 @@ layout: post
 title:  "Preservation of Dinosaur Biomolecules in Fossils"
 date:   2015-02-27
 volume: 1
-categories: original
 field: Archaeology
 tags: [dinosaur biomolecules, fossils, immunohistochemistry, collagen]
 filename: 2015-02-27-LaiPreservation

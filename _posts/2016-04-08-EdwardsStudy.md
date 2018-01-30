@@ -3,7 +3,6 @@ layout: post
 title:  "The Study of Genetics: A Historical Perspective"
 date:   2016-04-08
 volume: 1
-categories: original
 field: Biology
 featureImage: Figure2.png
 tags: [hybridization, inheritance, heredity, trait, law of segregation, allele, dominant, recessive, Lysenkoism]

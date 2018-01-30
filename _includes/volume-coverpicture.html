@@ -1,0 +1,13 @@
+<a href={{ include.volume.url }}>
+  <div class="dogear-container">
+    {%- if include.volume.current -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
+    {%- if include.volume.upcoming -%}<div class="ribbon"><span>Upcoming</span></div>{%- endif -%}
+    {%- if include.volume.upcoming -%}
+    <div class="dogear" style="background:{{ site.color }}"></div>
+    <div class="{{ include.div_class }}" style="background-image:url({{ "/assets/global/favicon.png" | relative_url }})"></div>
+    {%- else -%}
+    <div class="dogear" style="background:{{ include.volume.basecolor }}"></div>
+    <div class="{{ include.div_class }}" style="background-image:url({{ "/assets/covers/vol" | append: include.volume.number | append: ".jpg" | relative_url }})"></div>
+    {%- endif -%}
+  </div>
+</a>

@@ -7,19 +7,7 @@
   <div class="row">
     <div class="col-5">
       <div class="latest-issue-img-block">
-        <a href={{ include.volume.url }}>
-          <div class="dogear-container">
-            {%- if include.volume.current -%}<div class="ribbon"><span>Current</span></div>{%- endif -%}
-            {%- if include.volume.upcoming -%}<div class="ribbon"><span>Upcoming</span></div>{%- endif -%}
-            {%- if include.volume.upcoming -%}
-            <div class="dogear" style="background:{{ include.volume.basecolor }}"></div>
-            <div class="latest-issue-img" style="background-image:url({{ "/assets/favicon/new.png" | relative_url }})"></div>
-            {%- else -%}
-            <div class="dogear" style="background:{{ include.volume.basecolor }}"></div>
-            <div class="latest-issue-img" style="background-image:url({{ "/assets/covers/vol" | append: include.volume.number | append: ".jpg" | relative_url }})"></div>
-            {%- endif -%}
-          </div>
-        </a>
+        {% include volume-coverpicture.html volume=include.volume div_class="latest-issue-img"%}
       </div>
     </div>
     <div class="col-7">
@@ -28,7 +16,13 @@
         <a href={{ include.volume.url }}>
         <h3>Volume</h3>
         <h1 class="latest-issue-text-vol-number">{{ include.volume.number }}</h2>
-        <span class="vol-meta">{{ include.volume.date | date: date_format }}</span>
+          <span class="vol-meta">
+          {%- if include.volume.upcoming -%}
+            {{ include.volume.season }}
+          {%- else -%}
+            {{ include.volume.date | date: date_format }}
+          {%- endif -%}
+          </span>
         </a>
       </div>
     </div>

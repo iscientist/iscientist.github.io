@@ -3,7 +3,6 @@ layout: post
 title:  "Investigating the Relationship between Variance of Transition Temperatures in an Undergraduate Laboratory Setting"
 date:   2017-04-01
 volume: 2
-categories: original
 field: Chemistry
 tags: ['colligative properties', 'freezing point depression', 'boiling point elevation', 'transition constants', 'lab practicum', 'pedagogy']
 filename: 2017-04-01-ObilleInvestigating

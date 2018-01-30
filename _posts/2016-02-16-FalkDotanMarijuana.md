@@ -3,7 +3,6 @@ layout: post
 title:  "Marijuana - How Safe is it Really?"
 date:   2016-02-16
 volume: 1
-categories: original
 field: Biology
 tags: [Cannabis, marijuana, safety, health, tobacco, alcohol]
 filename: 2016-02-16-FalkDotanMarijuana

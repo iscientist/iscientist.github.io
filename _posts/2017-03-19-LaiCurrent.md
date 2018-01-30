@@ -3,7 +3,6 @@ layout: post
 title:  "Current Understanding of Europa and Potential in Upcoming Exploration"
 date:   2017-03-19
 volume: 2
-categories: original
 field: Astronomy
 featureImage: Figure1.png
 tags: ['Europa', 'astrobiology', 'space exploration', 'Jupiter', 'Mars']
