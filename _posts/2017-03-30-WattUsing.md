@@ -1,12 +1,12 @@
 ---
 layout: post
+type: article
 title:  "Using Viruses as Molecular Biology Tools: A Review of Viral Transneural Tracing"
 date:   2017-03-30
 volume: 2
 field: Biology
 featureImage: Figure12.png
 tags: [transneural tracers, viruses, neural circuits, Herpesvirus, Rabies virus, viral neural transport, neurotrophic viruses, central nervous system, peripheral nervous system, motoneurons]
-filename: 2017-03-30-WattUsing
 author:
   - name: Watt, Jacqueline
     affiliation:

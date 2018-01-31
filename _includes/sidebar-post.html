@@ -1,7 +1,7 @@
-{% if page.filename %}
+{% if page.type == 'article' %}
 <div class="sidebar-section page-info">
 <h2 class="page-heading">This Paper</h2>
-  <a href="{{ page.filename | append: ".pdf" | prepend: "assets/pdf/" | relative_url }}">PDF</a>
+  <a href="{{ page.date | date: "%Y-%m-%d-" | append: page.slug | append: ".pdf" | prepend: "assets/pdf/" | relative_url }}">PDF</a>
   {% include bibtex.html %}
 </div>
 

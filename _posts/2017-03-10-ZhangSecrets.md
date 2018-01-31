@@ -1,12 +1,12 @@
 ---
 layout: post
+type: article
 title:  "Secrets in Math: How do We Fly? "
 date:   2017-03-10
 volume: 2
 field: Mathematics
 featureImage: Figure4.png
 tags: [flight, tensors, d'Alembert's paradox]
-filename: 2017-03-10-ZhangSecrets
 author:
   - name: Zhang, Simon
     affiliation:

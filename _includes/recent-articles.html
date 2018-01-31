@@ -12,7 +12,7 @@
         </h2>
       </div>
       {%- if post.featureImage -%}
-        <div class="post-listing-image" style="background-image: url({{ "/assets/img/" | append: post.filename | append: "/" | append: post.featureImage | relative_url }})">
+        <div class="post-listing-image" style="background-image: url({{ post.date | date: "/assets/img/%Y-%m-%d-" | append: post.slug | append: "/" | append: post.featureImage | relative_url }})">
           <a class="post-listing-overlay" href="{{ post.url | relative_url }}"></a>
         </div>
       {%- endif -%}

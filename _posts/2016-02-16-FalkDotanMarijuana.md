@@ -1,11 +1,11 @@
 ---
 layout: post
+type: article
 title:  "Marijuana - How Safe is it Really?"
 date:   2016-02-16
 volume: 1
 field: Biology
 tags: [Cannabis, marijuana, safety, health, tobacco, alcohol]
-filename: 2016-02-16-FalkDotanMarijuana
 author:
   - name: Falk-Dotan, Biran
     affiliation:

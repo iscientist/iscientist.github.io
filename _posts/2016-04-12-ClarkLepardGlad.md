@@ -1,11 +1,11 @@
 ---
 layout: post
+type: article
 title:  "Glad You Came: The History of the Science Concerning the Study of the Female Orgasm"
 date:   2016-04-12
 volume: 1
 field: Biology
 tags: [hysteria, female ejaculation (squirting), vaginal orgasm, clitoral orgasm, CUMD, female sexuality, masturbation, reproductive anatomy]
-filename: 2016-04-12-ClarkLepardGlad
 author:
   - name: Clark-Lepard, Eva
     affiliation:

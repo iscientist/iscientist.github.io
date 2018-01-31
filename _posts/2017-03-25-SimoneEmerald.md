@@ -1,12 +1,12 @@
 ---
 layout: post
+type: article
 title:  "Emerald Ash Borer Incidence and Infestation at McMaster Forest Teaching and Research Facility"
 date:   2017-03-25
 volume: 2
 field: Biology
 featureImage: Figure1.png
 tags: ['Fraxinus', 'Agrilus', 'invasive species', 'ecological land classifications', 'Canada', 'urban forest']
-filename: 2017-03-25-SimoneEmerald
 author:
   - name: Simone, Kyra
     affiliation:

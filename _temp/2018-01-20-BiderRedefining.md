@@ -1,12 +1,12 @@
 ---
 layout: post
+type: article
 title:  "Redefining Invasive Species Using a Stage-Based Process"
 date:   2018-01-20
 volume: 3
 categories: original
 field: Biology
 tags: [Invasion ecology, invasive species, stage-based model, propagule pressure, resource availability, energy consumption, reproductive capability]
-filename: 2018-01-20-BiderRedefining
 author:
   - name: Daniel, Tanya
     affiliation:

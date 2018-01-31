@@ -1,12 +1,12 @@
 ---
 layout: post
+type: article
 title:  "Current Understanding of Europa and Potential in Upcoming Exploration"
 date:   2017-03-19
 volume: 2
 field: Astronomy
 featureImage: Figure1.png
 tags: ['Europa', 'astrobiology', 'space exploration', 'Jupiter', 'Mars']
-filename: 2017-03-19-LaiCurrent
 author:
   - name: Lai, James
     affiliation:

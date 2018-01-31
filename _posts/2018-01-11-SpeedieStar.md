@@ -1,12 +1,12 @@
 ---
 layout: post
+type: article
 title:  "Star Formation and Morphology of Galaxies in Local Compact Groups"
 date:   2018-01-11
 volume: 3
 field: Astronomy
 featureImage: Figure1a.jpg
 tags: ["compact groups", "galaxies: star formation", "galaxies: morphology"]
-filename: 2018-01-11-SpeedieStar
 author:
   - name: Speedie, Jessica
     affiliation:

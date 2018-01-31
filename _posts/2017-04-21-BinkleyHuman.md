@@ -1,11 +1,11 @@
 ---
 layout: post
+type: article
 title:  "Human Papilloma Virus: Combatting Cancer with Vaccination"
 date:   2017-04-21
 volume: 2
 field: Biology
 tags: ['Human Papilloma Virus (HPV)', 'vaccination', 'viral pathogenesis', 'cancer']
-filename: 2017-04-21-BinkleyHuman
 author:
   - name: Binkley, Dakota
     affiliation:

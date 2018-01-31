@@ -13,7 +13,7 @@
       {% if page_paths %}
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       {% endif %}
-      {% if page.filename %}
+      {% if page.type == 'article' %}
         <input type="checkbox" id="nav-trigger-page" class="nav-trigger" />
       {% endif %}
 
@@ -24,7 +24,7 @@
           </span>
         </label>
       {% endif %}
-      {% if page.filename %}
+      {% if page.type == 'article' %}
         <label for="nav-trigger-page">
           <span class="menu-icon">
             <i class="fa fa-map-o"></i>
@@ -45,7 +45,7 @@
         </div>
       {% endif %}
 
-      {% if page.filename %}
+      {% if page.type == 'article' %}
         <div class="trigger" id="trigger-page">
           <h2 class="page-heading">Outline</h2>
           {% include page-tree.html

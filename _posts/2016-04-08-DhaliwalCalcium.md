@@ -1,11 +1,11 @@
 ---
 layout: post
+type: article
 title:  "Calcium availability and the interaction of <i>Arabidopsis thaliana</i> and <i>Myzus persicae</i>"
 date:   2016-04-08
 volume: 1
 field: Biology
 tags: [Calcium, Arabidopsis thaliana, Myzus persicae, callose deposition, resource availability theory, 	micronutrient availability]
-filename: 2016-04-08-DhaliwalCalcium
 author:
   - name: Dhaliwal, Alex
     affiliation:

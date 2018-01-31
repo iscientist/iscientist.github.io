@@ -1,7 +1,7 @@
 function generateRandomPosts()
 {
   $.getJSON("/search.json", function(data) {
-    console.log("[search.json loaded for random posts]");
+    console.log("[sorted random posts]");
 
     var postsCount = data.length;
     var posts = data;
@@ -22,6 +22,7 @@ function generateRandomPosts()
         var postTitle = posts[randomIndex].title;
 
         var tmpString = "";
+        var postImage = "";
 
       //  divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p><hr />');
         tmpString = '<li><div class="post-listing-text" ';
@@ -34,8 +35,14 @@ function generateRandomPosts()
         tmpString += '<h2><a class="post-link" href="' + postHREF + '">' + postTitle + '</a></h2></div>';
         if (posts[randomIndex].featureImage)
         {
-          tmpString += '<div class="post-listing-image" style="background-image: url(/assets/img/' + posts[randomIndex].filename + '/' + posts[randomIndex].featureImage + ')"><a class="post-listing-overlay" href="' + posts[randomIndex].href + '"></a></div>';
+          postImage += '/assets/img' + posts[randomIndex].href + '/' + posts[randomIndex].featureImage;
+          postImage = postImage.replace('.html','');
+          postImage = postImage.replace(/./g, (c, i) => i == 16? '-': c);
+          postImage = postImage.replace(/./g, (c, i) => i == 19? '-': c);
+          postImage = postImage.replace(/./g, (c, i) => i == 22? '-': c);
+          tmpString += '<div class="post-listing-image" style="background-image: url(' + postImage + ')"><a class="post-listing-overlay" href="' + posts[randomIndex].href + '"></a></div>';
         }
+        console.log(postImage);
         tmpString += '</li>';
         divRandomPosts.append(tmpString);
         randomIndexUsed.push(randomIndex);

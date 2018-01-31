@@ -1,11 +1,11 @@
 ---
 layout: post
+type: article
 title:  "Quasar citizens of distant epochs Rig Veda Vangelis realm of the galaxies"
 date:   2017-11-16 01:00:00 -0500
 volume: 2
 categories: original
 tags: ['architecto', 'quasar', 'Champollion', 'turbulent clouds', 'Flatland']
-filename: 2017-11-16-ChickenChickenChicken
 author:
   - name: Einstein, Albert
     affiliation:

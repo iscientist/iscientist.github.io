@@ -1,11 +1,11 @@
 ---
 layout: post
+type: article
 title:  "The Induction of the Jasmonic Acid (JA) Plant Defence Pathway Affecting the Host-Plant Selection of <i>Myzus persicae</i>"
 date:   2017-02-20
 volume: 2
 field: Biology
 tags: ['Arabidopsis thaliana', 'Myzus persicae', 'green peach aphid', 'host preference', 'metapopulation dynamics', 'herbivory', 'mechanical wounding', 'defence pathways']
-filename: 2017-02-20-EdwardsInduction
 author:
   - name: Al-Atout, Rama
     affiliation:
