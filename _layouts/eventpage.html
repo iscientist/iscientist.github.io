@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y %I:%M %p" %}
+        {% if page.upcomingDate %}
+          {{ page.upcomingDate | date: "%b %-d, %Y %I:%M %p" }}
+        {% else %}
+          {{ page.date | date: "%b %-d, %Y" }}
+        {% endif %}
+      </time>&nbsp;|&nbsp;
+      <span> {{ page.location }} </span>
+      <br>
+    </p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

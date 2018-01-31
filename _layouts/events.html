@@ -1,0 +1,21 @@
+---
+layout: page
+---
+{{ content }}
+
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+{%- if site.eventsUpcoming.size > 0 -%}
+<h2>Upcoming</h2>
+<div class="post-listing-home">
+{%- for post in site.eventsUpcoming reversed -%}
+{% include post-listing.html imageFolder='/assets/events/'%}
+{%- endfor -%}
+</div>
+{%- endif -%}
+
+<h2>Past</h2>
+<div class="post-listing-home">
+{%- for post in site.events reversed -%}
+{% include post-listing.html imageFolder='/assets/events/'%}
+{%- endfor -%}
+</div>

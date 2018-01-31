@@ -3,5 +3,8 @@
 <i>The iScientist</i> is McMaster University's undergraduate interdisciplinary research journal. We publish content representing a wide range of scientific fields, all of which is openly accessible. <i>The iScientist</i> publishes articles on a rolling basis online, which are compiled into annual volumes. The journal is run by a student-led team of volunteers.
 </div>
 
+{% if site.eventsUpcoming.size > 0 %}
+{% include upcoming-events.html %}
+{% endif %}
 {% include random-articles.html %}
 {% include recent-articles.html %}

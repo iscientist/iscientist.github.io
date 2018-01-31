@@ -1,0 +1,25 @@
+<div class="sidebar-section">
+<h2 class="page-heading">Upcoming Events</h2>
+
+<ul class="post-listing-sidebar">
+  {% for event in site.eventsUpcoming %}
+    <li>
+      <div class="post-listing-text" {%- if event.featureImage -%}style="width:70%"{%- endif -%}>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y %I:%M %p" %}
+        <span class="post-meta">{{ event.upcomingDate | date: date_format }}</span>
+        <h2>
+          <a class="post-link" href="{{ event.url | relative_url }}">{{ event.title }}</a>
+        </h2>
+      </div>
+      {%- if event.featureImage -%}
+        <div class="post-listing-image" style="background-image: url({{ "/assets/events/" | append: event.featureImage }})">
+          <a class="post-listing-overlay" href="{{ event.url | relative_url }}"></a>
+        </div>
+      {%- endif -%}
+    </li>
+    {% if forloop.index == 5 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>

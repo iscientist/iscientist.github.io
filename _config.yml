@@ -26,6 +26,10 @@ acknowledge-web-author: false
 collections:
   volumes:
     output: true
+  events:
+    output: true
+  eventsUpcoming:
+    output: true
 
 # Build settings
 markdown: kramdown

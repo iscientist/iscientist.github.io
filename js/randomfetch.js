@@ -42,7 +42,6 @@ function generateRandomPosts()
           postImage = postImage.replace(/./g, (c, i) => i == 22? '-': c);
           tmpString += '<div class="post-listing-image" style="background-image: url(' + postImage + ')"><a class="post-listing-overlay" href="' + posts[randomIndex].href + '"></a></div>';
         }
-        console.log(postImage);
         tmpString += '</li>';
         divRandomPosts.append(tmpString);
         randomIndexUsed.push(randomIndex);
