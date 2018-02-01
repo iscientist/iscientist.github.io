@@ -60,6 +60,11 @@ carousel:
     caption: "Panorama of Cootes paradise, Hamilton ON"
     pc: "Jonathan Panuelos"
     date: 2015
+  - image: Panuelos2018Anatolius-min.jpg
+    caption: "Sculpture of Greek mathematician Anatolius residing in Hamilton Hall, McMaster University, Hamilton ON"
+    pc: "Jonathan Panuelos"
+    date: 2018
+    contain: True
   - image: Lai2017WildViolet-min.jpg
     caption: "Wild violet (<i>Viola</i> spp.)"
     pc: "James Lai"
