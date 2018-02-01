@@ -12,35 +12,51 @@ $spacing-unit:     30px !default;
 
 
 // Colors
-$text-color:       #111 !default;
-$text-color-light: #888 !default;
-$text-color-white: #DDD !default;
+$white:                 #FFF;
 
-$background-color: #FDFDFD !default;
+$text-color:            #111 !default;
+$text-color-light:      #888 !default;
+$text-color-white:      #DDD !default;
+
+$background-color:          #FDFDFD !default;
 $main-background-color:     #FDFDFD !default;
 $footer-background-color:   #2A4747 !default;
 
-$banner-background-color: #555555 !default;
-$background-color-transparent: rgba(253,253,253,0.0) !default;
-$background-color-transluscent: rgba(253,253,253,0.75) !default;
-$background-color-dark-transluscent: rgba(35,35,35,0.75) !default;
-$background-color-opaque: rgba(253,253,253,1.0) !default;
+$banner-background-color:             #555555 !default;
+$background-color-transparent:        rgba(253,253,253,0.0) !default;
+$background-color-transluscent:       rgba(253,253,253,0.75) !default;
+$background-color-dark-transluscent:  rgba(35,35,35,0.75) !default;
+$background-color-opaque:             rgba(253,253,253,1.0) !default;
 
-$brand-color:      #A9E5BB !default;
-$brand-accent:     #A9E5BB !default;
-$brand-color-pastel: lighten(desaturate( $brand-color, 15% ), 17%) !default;
-$link-color:       darken($brand-color, 25%) !default;
+$brand-color:           #A9E5BB !default;
+$brand-accent:          #A9E5BB !default;
+$brand-color-i:         #39B54A !default;
+$brand-color-pastel:    lighten(desaturate( $brand-color, 15% ), 17%) !default;
+$link-color:            darken($brand-color, 25%) !default;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color:            #828282 !default;
+$grey-color-light:      lighten($grey-color, 40%) !default;
+$grey-color-dark:       darken($grey-color, 25%) !default;
+
+$staff-box-color:       $footer-background-color !default;
+$staff-box-font-color:  $text-color-white !default;
+// Figures
+$figure-box-color:      $grey-color-light !default;
+// Tables
+$table-box-color:       $grey-color-light !default;
+// Volume box
+$content-highlight-box-color: $footer-background-color !default;
+// Ribbon defaults
+$ribbon-color:          #CD1F23 !default;
+$ribbon-color-text:     $white !default;
+
 
 // Width of the content area
-$content-width:    1220px !default;
-$header-width:      1620px !default;
+$content-width:         1220px !default;
+$header-width:          1620px !default;
 
-$on-palm:          767px !default;
-$on-laptop:        800px !default;
+$on-palm:               767px !default;
+$on-laptop:             800px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

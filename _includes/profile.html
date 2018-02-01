@@ -1,0 +1,24 @@
+<div class="profile-box mainpage-section">
+  {%- if include.picture or include.externalPicture -%}
+  <div class="row">
+    <div class="col-4">
+      {%- if include.picture -%}
+      <div class="profile-img" style="background-image:url({{ "/assets/staff/" | append: include.picture | relative_url }})"></div>
+      {% else if include.externalPicture %}
+      <div class="profile-img" style="background-image:url({{ include.externalPicture }})"></div>
+      {%- endif -%}
+    </div>
+    <div class="col-8">
+    {%- endif -%}
+      <div class="profile-text-block">
+        <h3>{{ include.name }}</h3>
+        {{ if include.subtitle }}
+          <h4>{{ include.subtitle }}</h4>
+        {{ endif }}
+        {{ include.about | markdownify }}
+      </div>
+    {%- if include.picture or include.externalPicture -%}
+    </div>
+  </div>
+  {%- endif -%}
+</div>

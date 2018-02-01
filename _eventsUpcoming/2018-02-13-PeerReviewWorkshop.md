@@ -5,6 +5,11 @@ date: 2018-01-30 19:30
 upcomingDate: 2018-02-13 19:30
 location: ThInK Space (3rd Floor Thode Library)
 featureImage: PeerReviewWorkshopBanner.png
+carousel:
+  - image: events/PeerReviewWorkshopBanner.png
+    caption:
+    pc:
+    date:
 ---
 We welcome anyone interested in how science is published to attend our upcoming peer review workshop!
 

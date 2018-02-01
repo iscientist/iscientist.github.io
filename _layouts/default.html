@@ -11,7 +11,39 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+
+      {%- if page.carousel -%}
+      <div class="wrapper" id="topbanner">
+        {% if page.carousel %}
+        <div class="flexslider">
+          <ul class="slides">
+          {% for slides in page.carousel %}
+            <li>
+              <div class="flexslider-image-box">
+                <div class="flexslider-image-background rellax"
+                      style="background-image: url({{ slides.image | prepend: "/assets/" | relative_url }});
+                              background-color:black;
+                              {%- if slides.contain -%}background-size:contain;
+                              {%- else -%}background-size:cover;{%- endif -%}">
+                  <div class="flexslider-image-overlay"></div>
+                </div>
+                <div class="flexslider-image-overlay">
+                  <div class="flex-caption">
+                    <h2>{{ slides.caption }}</h2>
+                    <p>{%- if slides.pc -%}Photograph by: {{ slides.pc }}{%- endif -%}
+                    {%- if slides.date -%}&nbsp;|&nbsp;{{ slides.date }}{%- endif -%}</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {%- endif -%}
+
+      <div class="wrapper {% if page.carousel %}carousel-top{% endif %}">
         <div class="row">
           <div class="col-md-8">
             {{ content }}

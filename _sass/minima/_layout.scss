@@ -55,7 +55,7 @@
   &:hover {
     text-decoration: none;
     &>.site-title-i {
-      color: #39B54A;
+      color: $brand-color-i;
     }
   }
 }
@@ -508,13 +508,16 @@ ul {
 #mainpage {
   margin-top: $spacing-unit;
 }
+.carousel-top {
+  margin-top: $spacing-unit;
+}
 .mainpage-section {
   position: relative;
   margin-bottom: $spacing-unit;
 }
 
 .content-highlight {
-  background-color: $footer-background-color;
+  background-color: $content-highlight-box-color;
   width: 170%;
   left: -70%;
   padding-left: 70%;
@@ -657,12 +660,6 @@ ul {
   max-width: 100%;
   padding: 0px;
   background-color: $banner-background-color;
-}
-.flexslider-viewport {
-  height: 600px;
-  @include media-query($on-palm) {
-    height: 400px;
-  }
 }
 
 .flexslider .slides {
@@ -854,11 +851,11 @@ ul {
     padding: 10px 20px;
     font-size: $small-font-size;
     font-weight: bold;
-    color: #fff;
+    color: $ribbon-color-text;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.15em;
-    background: #cd1f23;
+    background: $ribbon-color;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   }
 }
@@ -885,6 +882,42 @@ ul {
   }
 }
 
+/**
+  ######  ########    ###    ######## ########
+ ##    ##    ##      ## ##   ##       ##
+ ##          ##     ##   ##  ##       ##
+  ######     ##    ##     ## ######   ######
+       ##    ##    ######### ##       ##
+ ##    ##    ##    ##     ## ##       ##
+  ######     ##    ##     ## ##       ##
+ */
+.profile-box {
+  background-color: $staff-box-color;
+  padding: 10px;
+  h2, h3, h4, p {
+    color: $staff-box-font-color;
+    margin: 0px;
+    padding: 0px;
+  }
+  h4 {
+    margin-bottom: 0.3*$spacing-unit;
+  }
+  a {
+    color: $staff-box-font-color;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    &:hover {
+      color: $link-color;
+    }
+  }
+  .profile-img {
+    width: 100%;
+    @include aspect-ratio(8,11);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
 
 /**
  ######## ####  ######   ##     ## ########  ########  ######
@@ -899,7 +932,7 @@ ul {
   margin-top: $spacing-unit * 1.865;
   margin-bottom: $spacing-unit * 1.865;
   //border: 1px solid $grey-color-dark;
-  background-color: $grey-color-light;
+  background-color: $figure-box-color;
   padding: $spacing-unit * 0.5;
   text-align: left;
 
@@ -926,7 +959,7 @@ ul {
   margin-top: $spacing-unit * 1.865;
   margin-bottom: $spacing-unit * 1.865;
   //border: 1px solid $grey-color-dark;
-  background-color: $grey-color-light;
+  background-color: $table-box-color;
   padding: $spacing-unit * 0.5;
   text-align: left;
 

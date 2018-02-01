@@ -42,11 +42,14 @@
   {% endif %}
 </div>
 
+{%- assign content_nonewlines = content | strip_newlines -%}
+{%- if content_nonewlines != "" -%}
 <div class="mainpage-notice-strip">
   <div class="mainpage-notice-caption">
     {{ content }}
   </div>
 </div>
+{%- endif -%}
 
 <div class="wrapper" id="mainpage">
   <div class="row">
@@ -65,9 +68,15 @@
           <div class="post-listing-home">
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             {%- for post in site.posts -%}
-            {% include post-listing.html %}
+              {% include post-listing.html %}
+              {% if forloop.index == 10 %}
+                {% break %}
+              {% endif %}
             {%- endfor -%}
           </div>
+        </div>
+        <div class="mainpage-section">
+          <h1 class="page-heading"><a href="{{ '/publications' | absolute_url }}">All Articles ></a></h1>
         </div>
 
       </div>
@@ -75,6 +84,12 @@
 
     </div>
     <div class="col-md-4">
+      <div class="sidebar-section">
+      {% for notice in site.notices %}
+        <h2 class="page-heading">{{ notice.title }}</h2>
+        {{ notice.content | markdownify }}
+      {% endfor %}
+      </div>
       {% include sidebar.html %}
     </div>
   </div>

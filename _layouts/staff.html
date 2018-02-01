@@ -1,0 +1,15 @@
+---
+layout: page
+---
+{{ content }}
+
+{% assign date_format = site.minima.date_format | default: "%Y" %}
+{%- assign post = site.staff.last -%}
+{% include post-listing.html imageFolder='/assets/staff/' noDate=true %}
+
+<h2>Past Editorial Boards</h2>
+{%- for post in site.staff reversed -%}
+{%- unless forloop.first -%}
+  {% include post-listing.html imageFolder='/assets/staff/' noDate=true %}
+{%- endunless -%}
+{%- endfor -%}

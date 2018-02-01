@@ -30,6 +30,10 @@ collections:
     output: true
   eventsUpcoming:
     output: true
+  staff:
+    output: true
+  notices:
+    output: false
 
 # Build settings
 markdown: kramdown

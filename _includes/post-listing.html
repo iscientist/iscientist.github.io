@@ -12,6 +12,7 @@
   {%- endif -%}
     <div class="post-listing-text">
       <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {%- unless include.noDate -%}
       <span class="post-meta">
         {%- if post.upcomingDate -%}
           Upcoming: {{ post.upcomingDate | date: date_format }}
@@ -19,6 +20,7 @@
           {{ post.date | date: date_format }}
         {%- endif -%}
       </span>
+      {%- endunless -%}
     {%- if post.location -%}
       <span class="post-meta"> | </span>
       <span class="post-meta">Location: {{ post.location }}</span>
