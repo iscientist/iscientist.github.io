@@ -27,7 +27,7 @@
   <link rel="apple-touch-icon" href="{{ "/assets/global/favicon/favicon-120x120.png" | relative_url }}"> // 120px
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/global/favicon/favicon-180x180.png" | relative_url }}">
   <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/global/favicon/favicon-152x152.png" | relative_url }}">
-  <link rel="apple-touch-icon" sizes="167x167" href="{{ "/assets/global/favicon/favicon-167x167.png" | relative_url }}">  
+  <link rel="apple-touch-icon" sizes="167x167" href="{{ "/assets/global/favicon/favicon-167x167.png" | relative_url }}">
 
 
   <!-- jquery !-->
@@ -50,15 +50,17 @@
   <meta name="theme-color" content="{{ site.color }}">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+  <!-- for random-articles !-->
+  <script src="{{ "/js/randomfetch.js" | relative_url }}"></script>
+
   {%- if page.carousel -%}
+  <!-- for random sort of max n images !-->
+  <script src="{{ "/js/randomcarousel.js" | relative_url }}"></script>
   <link rel="stylesheet" href="{{ "/flexslider/flexslider.css" | relative_url }}">
   <script src="{{ "/js/rellax.js" | relative_url }}"></script>
   <script src="{{ "/flexslider/jquery.flexslider.js" | relative_url }}"></script>
   <script src="{{ "/flexslider/initialize.flexslider.js" | relative_url }}"></script>
   {%- endif -%}
-
-  <!-- for random-articles !-->
-  <script src="{{ "/js/randomfetch.js" | relative_url }}"></script>
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}

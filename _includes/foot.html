@@ -1,13 +1,1 @@
 <script src="{{ "js/navshrink.js" | relative_url }}"></script>
-{%- if page.carousel -%}
-<script type="text/javascript">
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  // don't run on mobile
-}else
-{
-  var rellax = new Rellax('.rellax', {
-    speed: -2,
-  });
-}
-</script>
-{%- endif -%}
