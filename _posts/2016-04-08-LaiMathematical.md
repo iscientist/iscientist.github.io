@@ -7,7 +7,7 @@ volume: 1
 field: Astronomy
 tags: [mathematical model, habitable zones, tidal heating, astrobiology, exoplanets, exomoons, Maple, visualization]
 author:
-  - name: Lai, James
+  - name: James Lai
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
 abstract: |- # this means to ignore newlines until next tag

@@ -7,7 +7,7 @@ volume: 1
 field: Biology
 tags: [Cannabis, marijuana, safety, health, tobacco, alcohol]
 author:
-  - name: Falk-Dotan, Biran
+  - name: Biran Falk-Dotan
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
 abstract: |- # this means to ignore newlines until next tag

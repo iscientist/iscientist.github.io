@@ -7,7 +7,7 @@ volume: 2
 field: Mathematics
 tags: ['sociophysics', 'Sznajd Model', 'opinion dynamics', 'mathematical modelling', 'MATLAB']
 author:
-  - name: Basinski-Ferris, Aurora
+  - name: Aurora Basinski-Ferris
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
 abstract: |- # this means to ignore newlines until next tag

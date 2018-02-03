@@ -7,16 +7,16 @@ volume: 2
 field: Biology
 tags: [Arabidopsis thaliana, Myzus persicae, phloem-feeding insects, activated charcoal, road salt, plant-herbivore interactions, plant stress]
 author:
-  - name: Chou, Sommer
+  - name: Sommer Chou
     affiliation:
       - Integrated Science, Class of 2019, McMaster University
-  - name: Doan, Alexi
+  - name: Alexi Doan
     affiliation:
       - Integrated Science, Class of 2019, McMaster University
-  - name: Koniar, Helena
+  - name: Helena Koniar
     affiliation:
       - Integrated Science, Class of 2019, McMaster University
-  - name: Norman, Bryce
+  - name: Bryce Norman
     affiliation:
       - Integrated Science, Class of 2019, McMaster University
 abstract: |- # this means to ignore newlines until next tag

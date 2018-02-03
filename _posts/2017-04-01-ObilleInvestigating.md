@@ -7,7 +7,7 @@ volume: 2
 field: Chemistry
 tags: ['colligative properties', 'freezing point depression', 'boiling point elevation', 'transition constants', 'lab practicum', 'pedagogy']
 author:
-  - name: Obille, Angelico
+  - name: Angelico Obille
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
 abstract: |- # this means to ignore newlines until next tag

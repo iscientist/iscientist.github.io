@@ -25,7 +25,15 @@ body {
   font-kerning: normal;
 }
 
-
+/**
+ * Highlight color
+ */
+* {
+  &::selection {
+    background: $selection-color;
+    color: $white;
+  }
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

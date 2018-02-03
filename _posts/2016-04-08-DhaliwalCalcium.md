@@ -7,16 +7,16 @@ volume: 1
 field: Biology
 tags: [Calcium, Arabidopsis thaliana, Myzus persicae, callose deposition, resource availability theory, 	micronutrient availability]
 author:
-  - name: Dhaliwal, Alex
+  - name: Alex Dhaliwal
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
-  - name: Knoch, Jaime
+  - name: Jaime Knoch
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
-  - name: Obille, Angelico
+  - name: Angelico Obille
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
-  - name: Simone, Kyra
+  - name: Kyra Simone
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
 abstract: |- # this means to ignore newlines until next tag

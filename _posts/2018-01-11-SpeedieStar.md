@@ -8,10 +8,10 @@ field: Astronomy
 featureImage: Figure1a.jpg
 tags: ["compact groups", "galaxies: star formation", "galaxies: morphology"]
 author:
-  - name: Speedie, Jessica
+  - name: Jessica Speedie
     affiliation:
       - Integrated Science, Class of 2020, McMaster University
-  - name: Dr. Parker, Laura
+  - name: Dr. Laura Parker
     affiliation:
       - McMaster University, Physics and Astronomy Department
 abstract: |- # this means to ignore newlines until next tag

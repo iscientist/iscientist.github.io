@@ -8,7 +8,7 @@ field: Biology
 featureImage: Figure2.png
 tags: [hybridization, inheritance, heredity, trait, law of segregation, allele, dominant, recessive, Lysenkoism]
 author:
-  - name: Edwards, Ross
+  - name: Ross Edwards
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
 abstract: |- # this means to ignore newlines until next tag

@@ -8,7 +8,7 @@ field: Mathematics
 featureImage: Figure4.png
 tags: [flight, tensors, d'Alembert's paradox]
 author:
-  - name: Zhang, Simon
+  - name: Simon Zhang
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
 abstract: |- # this means to ignore newlines until next tag

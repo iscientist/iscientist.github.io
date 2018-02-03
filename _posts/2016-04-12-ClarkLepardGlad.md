@@ -7,10 +7,10 @@ volume: 1
 field: Biology
 tags: [hysteria, female ejaculation (squirting), vaginal orgasm, clitoral orgasm, CUMD, female sexuality, masturbation, reproductive anatomy]
 author:
-  - name: Clark-Lepard, Eva
+  - name: Eva Clark-Lepard
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
-  - name: Wilson, Alex
+  - name: Alex Wilson
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
 abstract: |- # this means to ignore newlines until next tag

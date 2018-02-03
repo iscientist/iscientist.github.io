@@ -7,7 +7,7 @@ volume: 1
 field: Archaeology
 tags: [dinosaur biomolecules, fossils, immunohistochemistry, collagen]
 author:
-  - name: Lai, James
+  - name: James Lai
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
 abstract: |- # this means to ignore newlines until next tag

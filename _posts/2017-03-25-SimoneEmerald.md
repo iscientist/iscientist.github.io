@@ -8,7 +8,7 @@ field: Biology
 featureImage: Figure1.png
 tags: ['Fraxinus', 'Agrilus', 'invasive species', 'ecological land classifications', 'Canada', 'urban forest']
 author:
-  - name: Simone, Kyra
+  - name: Kyra Simone
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
 abstract: |- # this means to ignore newlines until next tag

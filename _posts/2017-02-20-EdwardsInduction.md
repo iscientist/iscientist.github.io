@@ -7,19 +7,19 @@ volume: 2
 field: Biology
 tags: ['Arabidopsis thaliana', 'Myzus persicae', 'green peach aphid', 'host preference', 'metapopulation dynamics', 'herbivory', 'mechanical wounding', 'defence pathways']
 author:
-  - name: Al-Atout, Rama
+  - name: Rama Al-Atout
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
-  - name: Andres, Chimira
+  - name: Chimira Andres
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
-  - name: Chong, Michael
+  - name: Michael Chong
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
-  - name: Edwards, Ross
+  - name: Ross Edwards
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
-  - name: Pantaleo, Julia
+  - name: Julia Pantaleo
     affiliation:
       - Integrated Science, Class of 2018, McMaster University
 abstract: |- # this means to ignore newlines until next tag

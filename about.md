@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Welcome to *The iScientist*, McMaster University's undergraduate interdisciplinary research journal. We seek to publish original research, reviews, and academic letters produced by students during their undergraduate education. We publish work from a broad range of traditional scientific disciplines, as well as those that reside at the crossroads between them. Our focus is on examining global issues from different scientific perspectives. Publication in *The iScientist* is currently restricted to students and alumni from the Integrated Science program at McMaster University.
+Welcome to *The iScientist*, McMaster University's undergraduate interdisciplinary research journal. We seek to publish original research, reviews, and academic letters produced by students during their undergraduate education. We publish work from a broad range of traditional scientific disciplines, as well as those that reside at the crossroads between them. Our focus is on examining global issues from different scientific perspectives. Publication in *The iScientist* is currently restricted to students of the Faculty of Science at McMaster University.
 
 ## The Peer Review Process
 
@@ -23,6 +23,10 @@ All published work on *The iScientist* undergoes a full peer review process orga
 *The iScientist* was founded in 2013 by the students and faculty of the Integrated Science program at McMaster University. The founding Editor-in-Chief of *The iScientist* was Andrew Colgoni, who is the Services Librarian and an iCore member in the Integrated Science Program at McMaster University.
 
 Since then, we have been continuously endeavoring to showcase the excellent work of students of the Integrated Science Program at McMaster University.
+
+### Staff List
+
+We invite you to come [meet us and the past members of *The iScientist* editorial board here!](/staff)
 
 ## Journal Sponsorship
 

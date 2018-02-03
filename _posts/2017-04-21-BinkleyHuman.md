@@ -7,13 +7,13 @@ volume: 2
 field: Biology
 tags: ['Human Papilloma Virus (HPV)', 'vaccination', 'viral pathogenesis', 'cancer']
 author:
-  - name: Binkley, Dakota
+  - name: Dakota Binkley
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
-  - name: Watt, Jacqueline
+  - name: Jacqueline Watt
     affiliation:
       - Integrated Science, Class of 2017, McMaster University
-  - name: Bajpai, Achint
+  - name: Achint Bajpai
     affiliation:
       - Life Sciences, Class of 2017, McMaster University
 abstract: |- # this means to ignore newlines until next tag

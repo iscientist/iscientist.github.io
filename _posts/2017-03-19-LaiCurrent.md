@@ -8,7 +8,7 @@ field: Astronomy
 featureImage: Figure1.png
 tags: ['Europa', 'astrobiology', 'space exploration', 'Jupiter', 'Mars']
 author:
-  - name: Lai, James
+  - name: James Lai
     affiliation:
       - Michael G. DeGroote School of Medicine, Class of 2019, McMaster University
 abstract: |- # this means to ignore newlines until next tag
