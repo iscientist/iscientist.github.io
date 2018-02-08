@@ -4,7 +4,7 @@ type: article
 title:  "The Effects of Salinity and Activated Charcoal on the Herbivory of <i>Arabidopsis thaliana</i> by <i>Myzus persicae</i>"
 date:   2017-03-30
 volume: 2
-field: Biology
+field: Ecology
 tags: [Arabidopsis thaliana, Myzus persicae, phloem-feeding insects, activated charcoal, road salt, plant-herbivore interactions, plant stress]
 author:
   - name: Sommer Chou
