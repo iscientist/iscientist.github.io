@@ -3,9 +3,9 @@ layout: eventpage
 title: Science Writing Workshop
 date: 2018-01-24 19:30
 location: ThInK Space (3rd Floor Thode Library)
-featureImage: ScienceWritingWorkshopBanner.jpg
+featureImage: 2018-01-24-ScienceWritingWorkshop/ScienceWritingWorkshopBanner.jpg
 carousel:
-  - image: events/ScienceWritingWorkshopBanner.jpg
+  - image: events/2018-01-24-ScienceWritingWorkshop/ScienceWritingWorkshopBanner.jpg
     caption:
     pc:
     date:
