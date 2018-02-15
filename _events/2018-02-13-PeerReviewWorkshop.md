@@ -16,7 +16,6 @@ carousel:
     date:
 ---
 We thank everyone who attended our peer review workshop! Please stay tuned for more of our upcoming events!
-We welcome anyone interested in how science is published to attend our upcoming peer review workshop!
 
 We were very excited to learn all about "Peer Review" and why it is important. Many thanks to [Librarian Abeer Siddiqui](https://library.mcmaster.ca/contact/siddiqui-abeer) for coming and teaching us all about this crucial step in the publication process. From this workshop, we learned how to better proofread our writing, as well as make how to constructive comments on others'. Peer review is an essential part in maintaining high standards in the scientific community.
 
