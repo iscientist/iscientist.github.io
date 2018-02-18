@@ -1,7 +1,7 @@
 ---
 layout: post
 type: article
-title:  "The effects of used motor oil on <i>Myzus persicae</i> and <i>Arabidopsis thaliana</i>"
+title:  "The Effects of Used Motor Oil on <i>Myzus persicae</i> and <i>Arabidopsis thaliana</i>"
 date:   2018-02-07
 volume: 3
 field: Ecology
