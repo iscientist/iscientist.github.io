@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
+{{ "## By Volume" | markdownify }}
 <div class="row">
 {% for volume in site.volumes reversed %}
   <div class="col-md-4">
@@ -26,10 +27,15 @@ permalink: /publications/
 {% endfor %}
 </div>
 
-<!--
-
-Articles are found on this site.
-Full published journals can be found [here](https://issuu.com/mcmasteriscientist).
-
-[Volume 1](https://issuu.com/mcmasteriscientist/docs/digital_issue).
-!-->
+{{ "## By Field" | markdownify }}
+<div class="row">
+{% for field in site.fields %}
+  <div class="col-md-4">
+    <div class="vol-listing-block">
+      <div class="vol-listing-text">
+        <h2><a href={{ field.url }}>{{ field.title }}</a></h2>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

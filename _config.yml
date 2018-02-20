@@ -26,6 +26,8 @@ acknowledge-web-author: false
 collections:
   volumes:
     output: true
+  fields:
+    output: true
   events:
     output: true
   eventsUpcoming:
