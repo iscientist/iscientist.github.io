@@ -5,7 +5,7 @@ date: 2018-10-29 11:30
 location: ThInK Space (3rd Floor Thode Library)
 featureImage: 2018-10-29-PeerReviewWorkshop/PeerReviewBanner.jpg
 carousel:
-  - image: events/2018-10-29-PeerReviewWorkshop/PeerReviewBanner.jpg
+  - image: 2018-10-29-PeerReviewWorkshop/PeerReviewBanner.jpg
     caption:
     pc:
     date:
