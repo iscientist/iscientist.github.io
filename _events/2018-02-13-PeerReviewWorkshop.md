@@ -2,7 +2,6 @@
 layout: eventpage
 title: Peer Review Workshop
 date: 2018-01-30 19:30
-upcomingDate: 2018-02-13 19:30
 location: ThInK Space (3rd Floor Thode Library)
 featureImage: 2018-02-13-PeerReviewWorkshop/PeerReviewWorkshopBanner.png
 carousel:
