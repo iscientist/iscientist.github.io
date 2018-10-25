@@ -1,6 +1,6 @@
 ---
 layout: eventpage
-title: Science Writing Workshop
+title: Peer Review Workshop
 date: 2018-10-29 11:30
 location: ThInK Space (3rd Floor Thode Library)
 featureImage: assets/events/2018-10-29-PeerReviewWorkshop/PeerReviewBanner.jpg
