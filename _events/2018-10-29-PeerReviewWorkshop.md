@@ -3,9 +3,9 @@ layout: eventpage
 title: Peer Review Workshop
 date: 2018-10-29 11:30
 location: ThInK Space (3rd Floor Thode Library)
-featureImage: events/2018-10-29PeerReviewWorkshop/PeerReviewBanner.jpg
+featureImage: assets/events/2018-10-29PeerReviewWorkshop/PeerReviewBanner.jpg
 carousel:
-  - image: events/2018-10-29PeerReviewWorkshop/PeerReviewBanner.jpg
+  - image: assets/events/2018-10-29PeerReviewWorkshop/PeerReviewBanner.jpg
     caption:
     pc:
     date:
