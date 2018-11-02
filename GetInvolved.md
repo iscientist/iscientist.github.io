@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Get Involved
+title: Join Us
 permalink: /getinvolved/
 ---
 
