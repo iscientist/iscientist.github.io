@@ -10,6 +10,10 @@ carousel:
     pc:
     date:
 ---
-Check out The iScientist's first workshop of the year on peer review this Monday (Oct 29) from 11:30-12:20. 
 
-This workshop will provide critical tips on how to be a good peer reviewer; a vital skill for any student looking to enter the world of publishing! Light refreshments will be provided.
+We'd like to thank you again for attending our peer review workshop this past Monday.
+
+The iScientist aims to host three workshops a year on scientific communication! Please help us improve our workshops by filling out this feedback form:
+https://docs.google.com/…/1FAIpQLSdhq6dX4y2drJmmM…/viewform…
+
+We hope to hear from you soon! 💚
