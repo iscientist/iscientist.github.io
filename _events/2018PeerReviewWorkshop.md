@@ -14,6 +14,6 @@ carousel:
 We'd like to thank you again for attending our peer review workshop this past Monday.
 
 The iScientist aims to host three workshops a year on scientific communication! Please help us improve our workshops by filling out this feedback form:
-https://docs.google.com/forms/d/e/1FAIpQLSdhq6dX4y2drJmmMxuHed_w2PDiwHOBpPxM2W2QyKAuaLyBAQ/viewform?fbclid=IwAR2GmeBU22EU7M6yql2OfwUBDQf9qzWB33jPyWWetz46WuqebutqBnKSonc
+https://goo.gl/KKgfVv
 
 We hope to hear from you soon! 💚
