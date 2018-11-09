@@ -12,7 +12,7 @@ Please submit all files in `.doc`, `.docx`, or `.rtf` format. Submissions are to
 
 As well, please ensure that the submitted document contains no identifying features, such as the names and affiliations of authors, as well as names in the acknowledgements. This is to ensure a blind peer-review process.
 
-Further details are available in [the Handbook]({{ "/assets/misc/1718Guidelines.pdf" | relative_url }}). For questions regarding the authorship and submission process, please contact [{{ site.email }}]({{ site.email }}).
+Further details are available in [the Handbook]({{ "assets/misc/iScientist-Guidelines-Booklet-2018-2019.pdf" | relative_url }}). For questions regarding the authorship and submission process, please contact [{{ site.email }}]({{ site.email }}).
 
 ## Types of Submissions
 
