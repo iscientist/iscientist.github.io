@@ -13,6 +13,6 @@ carousel:
 
 We'd like to thank you again for attending our peer review workshop this past Monday.
 
-The iScientist aims to host three workshops a year on scientific communication! Please help us improve our workshops by filling out this feedback form [here](https://goo.gl/KKgfVv)
+The iScientist aims to host three workshops a year on scientific communication! Please help us improve our workshops by filling out this feedback form [here](https://goo.gl/KKgfVv).
 
 We hope to hear from you soon! 💚
