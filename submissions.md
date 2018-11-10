@@ -28,6 +28,7 @@ As part of the submission process, authors are required to check off their submi
 
 1. The submission is formatted according to the [proper template](https://drive.google.com/file/d/1ajArkxXgYRq-XEMlqtwUhhdB7kOw2NcS/view?usp=sharing).
 2. The submission contains no identifying features such as author names and affiliations, as well as names in the acknowledgements. This is to ensure a blind peer-review process.
+3. The [authorship form](assets/misc/Authorship-Form-2018-2019.pdf) is completed.
 
 Submissions that do not adhere to these guidelines may be returned to authors and asked for resubmission.
 
