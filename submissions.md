@@ -12,13 +12,13 @@ Please submit all files in `.doc`, `.docx`, or `.rtf` format. Submissions are to
 
 As well, please ensure that the submitted document contains no identifying features, such as the names and affiliations of authors, as well as names in the acknowledgements. This is to ensure a blind peer-review process.
 
-Further details are available in [the Handbook]({{ "assets/misc/iScientist-Guidelines-Booklet-2018-2019.pdf" | relative_url }}). For questions regarding the authorship and submission process, please contact [{{ site.email }}]({{ site.email }}).
+Further details are available in [the Handbook]({{ "/assets/misc/iScientist-Guidelines-Booklet-2018-2019-2.pdf" | relative_url }}). For questions regarding the authorship and submission process, please contact [{{ site.email }}]({{ site.email }}).
 
 ## Types of Submissions
 
 *The iScientist* accepts the following types of submissions: Research Articles, Review Articles, History of Science Articles, and Letters to *The iScientist*.
 
-Research articles report current, original research performed by the author(s). Review articles provide a summary of recent and current research in a particular field.
+Research articles report current, original research performed by the author(s). Review articles provide a summary of recent and current research in a particular field.assets
 
 Letters to *The iScientist* are brief reviews about a current development in interdisciplinary science. These are less formal than Research or Review Articles, where authors are permitted to provide their opinion on current developments in science or science policy provided they are sufficiently explained based on fact. Please contact us if you are unsure of whether your submission would be appropriate as a Letter.
 
