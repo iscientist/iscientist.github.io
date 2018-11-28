@@ -1,7 +1,7 @@
 ---
 title: Call for Submissions
 ---
-![Call for Submissions]({{ site.baseurl }}/assets/misc/Poster-CallForSubmissions.png)
+![Call for Submissions]({{ site.baseurl }}/assets/misc/Poster-Submissions.png)
 
 We are now accepting submissions for Volume IV until Monday February 25th. Please learn more about [how to submit here]({{ site.baseurl }}{% link submissions.md %}) and [submit your papers here]( https://journals.mcmaster.ca/iScientist/about/submissions#onlineSubmissions).
 
