@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+order: 1
 ---
 
 Welcome to *The iScientist*, McMaster University's undergraduate interdisciplinary research journal. We seek to publish original research, reviews, and academic letters produced by students during their undergraduate education. We publish work from a broad range of traditional scientific disciplines, as well as those that reside at the crossroads between them. Our focus is on examining global issues from different scientific perspectives. Publication in *The iScientist* is currently restricted to students of the Faculty of Science at McMaster University.
