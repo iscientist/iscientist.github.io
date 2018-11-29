@@ -2,6 +2,7 @@
 layout: page
 title: Submissions
 permalink: /submissions/
+order: 5
 ---
 
 ## Submissions Site
