@@ -11,7 +11,7 @@ carousel:
     date:
 ---
 
-We'd like to thank you again for attending our peer review workshop this past Monday.
+We'd like to thank you again for attending our peer review workshop this past Monday. Please find the workshop materials [here](https://drive.google.com/drive/folders/1LY7AnEuJEyzsJAeAiYCRAqGVQYJLZn-E?usp=sharing).
 
 The iScientist aims to host three workshops a year on scientific communication! Please help us improve our workshops by filling out this feedback form [here](https://goo.gl/KKgfVv).
 
