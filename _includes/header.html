@@ -1,7 +1,10 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %}
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for node in sorted_pages %}
+    <li><a href="{{node.url}}">{{node.title}}</a></li>
+    {% endfor %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">
         <span class="site-title-the">The</span><span
