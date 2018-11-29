@@ -1,7 +1,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {% assign pages_list = (site.pages | sort: 'order') %}
+    {% assign sorted_pages = site.pages | sort:"order" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">
         <span class="site-title-the">The</span><span
@@ -32,10 +32,8 @@
         </label>
       {% endif %}
 
-      {% for my_page in pages_list %}
-        {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-        {% endif %}
+      {% for node in sorted_pages %}
+        <li><a href="{{node.url}}">{{node.title}}</a></li>
       {% endfor %}
         </div>
       {% endif %}
