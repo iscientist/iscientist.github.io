@@ -1,0 +1,90 @@
+---
+layout: page
+title: 2018-2019
+date: 2018-01-09
+---
+Meet our team! 
+
+### Senior Editors
+{% include profile.html
+name=‘Tanya Daniel’
+subtitle='Senior Editor'
+about="
+Hello! I’m the one of the two Senior Editors for The iScientist. My main responsibility is to oversee the administration of the journal, assign peer reviewers, and to critically review submitted manuscripts, mainly in the field of ecology. I also assist with logistics and promotions.   My primary research focus is in urban bee ecology. I am particularly passionate about the development of sustainable cities that minimize habitat fragmentation and biodiversity loss to support Ontario bees.   My favourite aspect of effective science communication is its ability to inspire readers to explore scientific research and to ultimately encourage advocacy for influential policies. 
+"
+picture='2018-TanyaDaniel.jpg' %}
+
+{% include profile.html
+name=‘Sabrina Macklai’
+subtitle='Senior Editor'
+about="
+Hi! I’m one of the two 2018-2019 Senior iScientist editors for the Editorial Board. I am responsible for making final decisions on which articles reach publication, oversee the peer review process, and manage the daily operations of the journal. I’ve been on the Editorial Board since 2016 and have had the opportunity to be involved in the first print copies of the journal!  I’m currently in my final year of the Integrated Science program, with a concentration in chemical biology. I'm completing my undergraduate thesis in analytical chemistry under the supervision of Dr. Philip Britz-McKibbin in the Department of Chemistry and Chemical Biology. My thesis involves developing a novel assay for cannabis detection. I have been involved in several publications throughout my undergraduate career including The iScientist, Incite Magazine, and The Silhouette. Effective communication is a vital component of any field. It is my hope that The iScientist encourages young scientists to engage in science literacy and develop the skills required to share their research with the public. I strongly invite you to submit to The iScientist and I look forward to reviewing your work.
+" 
+picture='2018-SabrinaMacklai.JPG' %}
+
+{% include profile.html
+name='Sam Marchetti'
+subtitle=‘Level III Editor’
+about="
+Hi, I'm Sam! I'm in my third year of Integrated Science, concentrating in Biology, and I'm currently working on a project involving lady beetle response to necromones. I love Marvel and I'll sell any of my friends to you for a cheeseburger.
+"
+picture='2018-SamuelMarchetti.jpg' %}
+
+
+### Editors
+{% include profile.html
+name='Yajur Iyengar'
+subtitle='Level III Editor'
+about="
+As a Level III Editor I am responsible for critically reviewing any submitted undergraduate academic papers and scientific articles. More specifically my role focuses on analyzing various aspects of each paper to assess their overall quality, suggest edits, and make a recommendation for its inclusion in the journal’s final publication. In addition I also aid in any general administrative tasks on primary editorial board.
+"
+picture='2018-YajurIyengar.jpg' %}
+
+{% include profile.html
+name=‘Megan Tu’
+subtitle='Level II Editor'
+about="
+Hello! My name is Megan, and I am one of the Level II Editors for The iScientist.  I am an Integrated Science student concentrating in biology, and doing a minor in art history.  I enjoy traveling, tennis and watching Netflix.   As a Level II Editor, I am primarily responsible for assigning peer-reviewers and closely reviewing submitted manuscripts. I got involved in the iScientist as I am passionate about science communication. I believe science communication has the ability to motivate and encourage individuals to get involved in the scientific community, as well as provide individuals with interesting, and informative knowledge. 
+"
+picture='2018-MeganTu.png'%}
+
+{% include profile.html
+name='Mehrunnisa Shiraz'
+subtitle='Level II Editor'
+about="
+Hi! My name is Mehrunnisa and I am a second year Integrated Science student specializing in Psychology, Neuroscience, and Behaviour. 
+"%}
+
+{% include profile.html
+name=‘Maiura Muralitharan’
+subtitle=‘SIS Editor'
+about="
+Hi there! I am a third year Life Sciences Co-op student, and am one of the two SIS Editors for The iScientist! My main responsibilities include assigning peer reviewers, reviewing submitted manuscripts, and deciding whether submissions should be accepted to the journal. I am passionate about everything science-related, but am most interested by how the human body works and it’s response to infectious diseases! I joined The iScientist to learn more about science communication and explore undergraduate scientific research, and am having a lot of fun doing so! Feel free to reach out to me to talk about anything science related, or travel (I’ve travelled to over 10 countries)!
+"
+picture='2018-MaiuraMuralitharan.JPG'%}
+
+{% include profile.html
+name=‘Katherine Ilnicka’
+subtitle=‘SIS Editor'
+about="
+Hi! I'm a third year Honours Life Sciences student and it's my first year on the editorial board for The iScientist as an SIS editor. Some of my responsibilities include assigning peer reviewers, leading article edits, and promoting the journal.  With Life Sci being very general and heavy with electives, I am currently pursuing a minor in business to broaden my existing skill set, and I'm always on the lookout for potential career ideas.  I'm very excited to be a part of McMaster's undergraduate science journal and I look forward to learning more about the publishing process!
+"
+picture='2018-KatherineIlnicka.png'%}
+
+### Auxillary Positions
+
+{% include profile.html
+name='Kaushar Mahetaji'
+subtitle='Workshop Coordinator'
+about="
+Hi! My name is Kaushar. I'm the workshop coordinator this year, and am in my third-year of Integrated Science. I'm concentrated in biochemistry, but enjoy taking electives in history and ecology. In my spare time, I do taekwondo, and enjoy reading - especially historical fiction.  
+"
+picture='2018-KausharMahetaji.JPG'
+%}
+
+{% include profile.html
+name=‘Leena AlShenaiber’
+subtitle=‘Webmaster'
+about="
+Hello! I am a Level IV iSci student and the webmaster for this year. I am responsible for the iScientist website you are on right now!
+"%}
