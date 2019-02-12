@@ -9,7 +9,7 @@ order: 5
 
 Please visit the [iScientist submissions site](https://journals.mcmaster.ca/iScientist/about/submissions#onlineSubmissions) when you are ready to submit an article. Registration of a user account is required for submitting and checking the status of current submissions.
 
-Please submit all files in `.doc`, `.docx`, or `.rtf` format. Submissions are to be written as [manuscripts using this template](https://drive.google.com/file/d/1oeIStwMa55sWsF-kI78_B-z--NU4msjH/view?usp=sharing). You will also have the choice to submit supplementary files if needed.
+Please submit all files in `.doc`, `.docx`, or `.rtf` format. Submissions are to be written as [manuscripts using this template](https://docs.google.com/document/d/1nwEiua80noyLhmQD3hRlGOmnu3xbi8vapR86zgtvurs/edit?usp=sharing). You will also have the choice to submit supplementary files if needed.
 
 As well, please ensure that the submitted document contains no identifying features, such as the names and affiliations of authors, as well as names in the acknowledgements. This is to ensure a blind peer-review process.
 
@@ -27,7 +27,7 @@ Letters to *The iScientist* are brief reviews about a current development in int
 
 As part of the submission process, authors are required to check off their submission's compliance with the following items.
 
-1. The submission is formatted according to the [proper template](https://drive.google.com/file/d/1ajArkxXgYRq-XEMlqtwUhhdB7kOw2NcS/view?usp=sharing).
+1. The submission is formatted according to the [proper template](https://docs.google.com/document/d/1nwEiua80noyLhmQD3hRlGOmnu3xbi8vapR86zgtvurs/edit?usp=sharing).
 2. The submission contains no identifying features such as author names and affiliations, as well as names in the acknowledgements. This is to ensure a blind peer-review process.
 3. The [authorship form](assets/misc/Authorship-Form-2018-2019.pdf) is completed.
 
