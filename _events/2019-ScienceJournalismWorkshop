@@ -3,9 +3,9 @@ layout: eventpage
 title: Peer Review Workshop
 date: 2019-03-21 1:30
 location: ThInK Space (3rd Floor Thode Library)
-featureImage: 
+featureImage: assets/events/2019-03-21-ScienceJournalismWorkshop.png
 carousel:
-  - image: 
+  - image: assets/events/2019-03-21-ScienceJournalismWorkshop.png
     caption:
     pc:
     date:
