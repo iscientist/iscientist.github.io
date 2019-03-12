@@ -3,9 +3,9 @@ layout: eventpage
 title: Science Journalism Workshop
 date: 2019-03-21 1:30
 location: ThInK Space (3rd Floor Thode Library)
-featureImage: 2019-03-21-ScienceJournalismWorkshop.png
+featureImage: 2019-03-21-ScienceJournalismWorkshop/2019-03-21-ScienceJournalismWorkshop.png
 carousel:
-  - image: events/2019-03-21-ScienceJournalismWorkshop.png
+  - image: events/2019-03-21-ScienceJournalismWorkshop/2019-03-21-ScienceJournalismWorkshop.png
     caption:
     pc:
     date:
